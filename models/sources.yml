@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: marts
+    database: snowflake_sample_data
+    schema: tpch_sf1
+    tables:
+      - name: orders
+        description: Information regarding orders under retail project.
+      - name: customer
+        description: Information regarding customers under retail project.
+      - name: lineitem:
+        description: Information regarding lineitems related to theri corresponding orders under retail project.
+      - name: part
+        description: Information regarding parts under retail project.
