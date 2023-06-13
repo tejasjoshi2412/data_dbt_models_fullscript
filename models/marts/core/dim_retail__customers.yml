@@ -1,0 +1,49 @@
+version: 2
+
+models:
+  - name: dim_retail__customers
+    description: Information related to the customers who placed their order on the retail platform.
+
+    columns:        
+      - name: customer_id
+        description: Primary Key. A unique id assigned to every customer.
+        tests:
+          - not_null
+          - unique
+       
+      - name: nation_id
+        description: Foreign Key. Refers to every nation where the business is active.
+        tests:
+          - not_null
+
+      - name: name
+        description: Hashed Identity information of the customer.
+
+      - name: address
+        description: Address information of the customer.
+
+      - name: phone_number
+        description: Hashed Contact Information of the customer.
+
+      - name: account_balance
+        description: Account balance of the customer in their wallet.
+
+      - name: marketing_segment
+        description: Section of the marketing segment they belong to.
+
+      - name: first_order_date
+        description: Date when the first order was created by the customer.
+
+      - name: most_recent_order_date
+        description: Date when the first order was created by the customer.
+
+      - name: number_of_orders
+        description: Number of orders placed by a customer.
+
+      - name: lifetime_value
+        description: Lifetime value of the customer.
+
+      - name: average_order_value
+        description: Average order value of the customer's order.
+
+
