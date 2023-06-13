@@ -3,20 +3,19 @@ with sources AS (
         *
     FROM
         {{ source('marts', 'orders') }}
-)
-
+),
 
 renamed AS (
     SELECT
         o_orderkey AS order_id,
         o_custkey AS customer_id,
-        o_clerk as clerk_id,
-        0_orderstatus AS order_status,
+        o_clerk AS clerk_id,
+        o_orderstatus AS order_status,
         o_totalprice AS total_price,
-        o_orderdate::DATEAS created_at,
+        o_orderdate::DATE AS created_at,
         o_orderpriority AS priority,
-        o_shippriority as shipping_priority,
-        o_comment as comments
+        o_shippriority AS shipping_priority,
+        o_comment AS comments
     FROM
         sources
 )

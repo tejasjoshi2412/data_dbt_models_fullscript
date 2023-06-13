@@ -445,3 +445,2067 @@ having count(*) > 1
 [0m18:14:42.990713 [debug] [MainThread]: Command `dbt test` failed at 18:14:42.990713 after 3.98 seconds
 [0m18:14:42.991724 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002060DD5C210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002060E044210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002060E00B590>]}
 [0m18:14:42.992713 [debug] [MainThread]: Flushing usage events
+[0m19:54:42.866749 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024AF2AC3310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024AF2DD1550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024AF2DB2010>]}
+
+
+============================== 19:54:42.872329 | 8a459614-a0b9-45da-9600-8881e09202fb ==============================
+[0m19:54:42.872329 [info ] [MainThread]: Running with dbt=1.5.1
+[0m19:54:42.873842 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\Lenovo\\Documents\\data_dbt_models_fullscript\\logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\Lenovo\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m19:54:43.297098 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8a459614-a0b9-45da-9600-8881e09202fb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024AF2ACD650>]}
+[0m19:54:43.307100 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '8a459614-a0b9-45da-9600-8881e09202fb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024AF3B26C10>]}
+[0m19:54:43.320288 [debug] [MainThread]: checksum: 51f6b581eba8f8101bc020bf9faf8f96af641e2da86d581f66e2bdf0ff384b1c, vars: {}, profile: , target: , version: 1.5.1
+[0m19:54:43.376120 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Error reading full_script_retail: sources.yml - Runtime Error
+    Syntax error near line 12
+    ------------------------------
+    9  |         description: Information regarding orders under retail project.
+    10 |       - name: customer
+    11 |         description: Information regarding customers under retail project.
+    12 |       - name: lineitem:
+    13 |         description: Information regarding lineitems related to theri corresponding orders under retail project.
+    14 |       - name: part
+    15 |         description: Information regarding parts under retail project.
+    
+    Raw Error:
+    ------------------------------
+    mapping values are not allowed in this context
+      in "<unicode string>", line 12, column 23
+[0m19:54:43.381128 [debug] [MainThread]: Command `dbt run` failed at 19:54:43.380125 after 0.54 seconds
+[0m19:54:43.382130 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024AF2DB0550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024AF2FDDED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024AF2A9C9D0>]}
+[0m19:54:43.384127 [debug] [MainThread]: Flushing usage events
+[0m19:55:14.736165 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016CE6CB0690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016CE6CD4490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016CE6F88650>]}
+
+
+============================== 19:55:14.740199 | 8e86d923-0ce4-45c7-9b95-02f6a0567c74 ==============================
+[0m19:55:14.740199 [info ] [MainThread]: Running with dbt=1.5.1
+[0m19:55:14.741184 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\Lenovo\\Documents\\data_dbt_models_fullscript\\logs', 'profiles_dir': 'C:\\Users\\Lenovo\\.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m19:55:15.039892 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8e86d923-0ce4-45c7-9b95-02f6a0567c74', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016CE6CD59D0>]}
+[0m19:55:15.052003 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '8e86d923-0ce4-45c7-9b95-02f6a0567c74', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016CE6CB3410>]}
+[0m19:55:15.062988 [debug] [MainThread]: checksum: 51f6b581eba8f8101bc020bf9faf8f96af641e2da86d581f66e2bdf0ff384b1c, vars: {}, profile: , target: , version: 1.5.1
+[0m19:55:15.162202 [debug] [MainThread]: Partial parsing enabled: 3 files deleted, 9 files added, 0 files changed.
+[0m19:55:15.163203 [debug] [MainThread]: Partial parsing: added file: full_script_retail://models\intermediate\int_retail__customer_order_aggregated.yml
+[0m19:55:15.163203 [debug] [MainThread]: Partial parsing: added file: full_script_retail://models\staging\stg_retail__orders.sql
+[0m19:55:15.164210 [debug] [MainThread]: Partial parsing: added file: full_script_retail://models\marts\dim_retail__customers.yml
+[0m19:55:15.164210 [debug] [MainThread]: Partial parsing: added file: full_script_retail://models\intermediate\int_retail__customer_order_aggregated.sql
+[0m19:55:15.165203 [debug] [MainThread]: Partial parsing: added file: full_script_retail://models\marts\dim_retail__customers.sql
+[0m19:55:15.165203 [debug] [MainThread]: Partial parsing: added file: full_script_retail://models\sources.yml
+[0m19:55:15.165203 [debug] [MainThread]: Partial parsing: added file: full_script_retail://models\staging\stg_retail__customers.yml
+[0m19:55:15.166203 [debug] [MainThread]: Partial parsing: added file: full_script_retail://models\staging\stg_retail__orders.yml
+[0m19:55:15.166203 [debug] [MainThread]: Partial parsing: added file: full_script_retail://models\staging\stg_retail__customers.sql
+[0m19:55:15.167203 [debug] [MainThread]: Partial parsing: deleted file: full_script_retail://models\example\my_first_dbt_model.sql
+[0m19:55:15.167203 [debug] [MainThread]: Partial parsing: deleted file: full_script_retail://models\example\my_second_dbt_model.sql
+[0m19:55:15.185602 [debug] [MainThread]: 1699: static parser successfully parsed staging\stg_retail__orders.sql
+[0m19:55:15.200026 [debug] [MainThread]: 1699: static parser successfully parsed intermediate\int_retail__customer_order_aggregated.sql
+[0m19:55:15.204030 [debug] [MainThread]: 1603: static parser failed on marts\dim_retail__customers.sql
+[0m19:55:15.209302 [debug] [MainThread]: 1602: parser fallback to jinja rendering on marts\dim_retail__customers.sql
+[0m19:55:15.211311 [debug] [MainThread]: 1699: static parser successfully parsed staging\stg_retail__customers.sql
+[0m19:55:15.296286 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.full_script_retail.example
+[0m19:55:15.304399 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '8e86d923-0ce4-45c7-9b95-02f6a0567c74', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016CE6CB22D0>]}
+[0m19:55:15.313191 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '8e86d923-0ce4-45c7-9b95-02f6a0567c74', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016CE7D37290>]}
+[0m19:55:15.314399 [info ] [MainThread]: Found 4 models, 12 tests, 0 snapshots, 0 analyses, 321 macros, 0 operations, 0 seed files, 4 sources, 0 exposures, 0 metrics, 0 groups
+[0m19:55:15.315442 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8e86d923-0ce4-45c7-9b95-02f6a0567c74', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016CE7D5B650>]}
+[0m19:55:15.318407 [info ] [MainThread]: 
+[0m19:55:15.320406 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m19:55:15.322583 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ANALYTICS'
+[0m19:55:15.337605 [debug] [ThreadPool]: Using snowflake connection "list_ANALYTICS"
+[0m19:55:15.338589 [debug] [ThreadPool]: On list_ANALYTICS: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "full_script_retail", "target_name": "dev", "connection_name": "list_ANALYTICS"} */
+show terse schemas in database ANALYTICS
+    limit 10000
+[0m19:55:15.338589 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:55:16.383474 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1.0 seconds
+[0m19:55:16.384471 [debug] [ThreadPool]: On list_ANALYTICS: Close
+[0m19:55:16.535723 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ANALYTICS_ANALYTICS_CORE'
+[0m19:55:16.547240 [debug] [ThreadPool]: Using snowflake connection "list_ANALYTICS_ANALYTICS_CORE"
+[0m19:55:16.548282 [debug] [ThreadPool]: On list_ANALYTICS_ANALYTICS_CORE: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "full_script_retail", "target_name": "dev", "connection_name": "list_ANALYTICS_ANALYTICS_CORE"} */
+show terse objects in ANALYTICS.ANALYTICS_CORE
+[0m19:55:16.548282 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:55:17.122243 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1.0 seconds
+[0m19:55:17.126665 [debug] [ThreadPool]: On list_ANALYTICS_ANALYTICS_CORE: Close
+[0m19:55:17.255620 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8e86d923-0ce4-45c7-9b95-02f6a0567c74', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016CE7DA3F50>]}
+[0m19:55:17.257667 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m19:55:17.259396 [info ] [MainThread]: 
+[0m19:55:17.274044 [debug] [Thread-1 (]: Began running node model.full_script_retail.stg_retail__customers
+[0m19:55:17.275047 [info ] [Thread-1 (]: 1 of 2 START sql view model ANALYTICS_CORE.stg_retail__customers ............... [RUN]
+[0m19:55:17.276446 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.full_script_retail.stg_retail__customers'
+[0m19:55:17.277422 [debug] [Thread-1 (]: Began compiling node model.full_script_retail.stg_retail__customers
+[0m19:55:17.279417 [debug] [Thread-1 (]: Writing injected SQL for node "model.full_script_retail.stg_retail__customers"
+[0m19:55:17.281410 [debug] [Thread-1 (]: Timing info for model.full_script_retail.stg_retail__customers (compile): 19:55:17.277422 => 19:55:17.281410
+[0m19:55:17.282414 [debug] [Thread-1 (]: Began executing node model.full_script_retail.stg_retail__customers
+[0m19:55:17.359386 [debug] [Thread-1 (]: Writing runtime sql for node "model.full_script_retail.stg_retail__customers"
+[0m19:55:17.363388 [debug] [Thread-1 (]: Using snowflake connection "model.full_script_retail.stg_retail__customers"
+[0m19:55:17.364386 [debug] [Thread-1 (]: On model.full_script_retail.stg_retail__customers: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "full_script_retail", "target_name": "dev", "node_id": "model.full_script_retail.stg_retail__customers"} */
+create or replace   view ANALYTICS.ANALYTICS_CORE.stg_retail__customers
+  
+   as (
+    with sources AS (
+    SELECT
+        *
+    FROM
+        snowflake_sample_data.tpch_sf1.customer
+)
+
+renamed AS (
+    SELECT
+        c_custkey AS customer_id,
+        c_nationkey AS nation_id,
+        MD5(c_name) AS customer_name,
+        c_address AS customer_address,
+        MD5(c_phone) AS phone_number,
+        c_acctbal AS account_balance,
+        c_mktsegment AS marketing_segment,
+        c_comment AS comments
+    FROM
+        sources
+)
+
+SELECT
+    *
+FROM
+    renamed
+  );
+[0m19:55:17.364386 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m19:55:18.111979 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01aced9b-0001-2569-0004-1622000130b2
+[0m19:55:18.111979 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 11 at position 0 unexpected 'renamed'.
+syntax error line 15 at position 20 unexpected 'AS'.
+[0m19:55:18.112999 [debug] [Thread-1 (]: Timing info for model.full_script_retail.stg_retail__customers (execute): 19:55:17.283407 => 19:55:18.112999
+[0m19:55:18.114034 [debug] [Thread-1 (]: On model.full_script_retail.stg_retail__customers: Close
+[0m19:55:18.260069 [debug] [Thread-1 (]: Database Error in model stg_retail__customers (models\staging\stg_retail__customers.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 11 at position 0 unexpected 'renamed'.
+  syntax error line 15 at position 20 unexpected 'AS'.
+  compiled Code at target\run\full_script_retail\models\staging\stg_retail__customers.sql
+[0m19:55:18.261062 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8e86d923-0ce4-45c7-9b95-02f6a0567c74', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016CE7F06690>]}
+[0m19:55:18.262015 [error] [Thread-1 (]: 1 of 2 ERROR creating sql view model ANALYTICS_CORE.stg_retail__customers ...... [[31mERROR[0m in 0.98s]
+[0m19:55:18.262509 [debug] [Thread-1 (]: Finished running node model.full_script_retail.stg_retail__customers
+[0m19:55:18.264513 [debug] [Thread-3 (]: Began running node model.full_script_retail.dim_retail__customers
+[0m19:55:18.265577 [info ] [Thread-3 (]: 2 of 2 SKIP relation ANALYTICS_CORE.dim_retail__customers ...................... [[33mSKIP[0m]
+[0m19:55:18.267515 [debug] [Thread-3 (]: Finished running node model.full_script_retail.dim_retail__customers
+[0m19:55:18.271517 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:55:18.272560 [debug] [MainThread]: Connection 'list_ANALYTICS' was properly closed.
+[0m19:55:18.272560 [debug] [MainThread]: Connection 'list_ANALYTICS_ANALYTICS_CORE' was properly closed.
+[0m19:55:18.272560 [debug] [MainThread]: Connection 'model.full_script_retail.stg_retail__customers' was properly closed.
+[0m19:55:18.273555 [info ] [MainThread]: 
+[0m19:55:18.274509 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 2.95 seconds (2.95s).
+[0m19:55:18.276513 [debug] [MainThread]: Command end result
+[0m19:55:18.283512 [info ] [MainThread]: 
+[0m19:55:18.285516 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m19:55:18.287532 [info ] [MainThread]: 
+[0m19:55:18.288940 [error] [MainThread]: [33mDatabase Error in model stg_retail__customers (models\staging\stg_retail__customers.sql)[0m
+[0m19:55:18.289945 [error] [MainThread]:   001003 (42000): SQL compilation error:
+[0m19:55:18.291964 [error] [MainThread]:   syntax error line 11 at position 0 unexpected 'renamed'.
+[0m19:55:18.293193 [error] [MainThread]:   syntax error line 15 at position 20 unexpected 'AS'.
+[0m19:55:18.294244 [error] [MainThread]:   compiled Code at target\run\full_script_retail\models\staging\stg_retail__customers.sql
+[0m19:55:18.296336 [info ] [MainThread]: 
+[0m19:55:18.297321 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=1 TOTAL=2
+[0m19:55:18.298313 [debug] [MainThread]: Command `dbt run` failed at 19:55:18.298313 after 3.58 seconds
+[0m19:55:18.299318 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016CE702DCD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016CE463B010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016CE4BFE790>]}
+[0m19:55:18.299318 [debug] [MainThread]: Flushing usage events
+[0m19:56:10.670541 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000226BECDE790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000226BF0BBA10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000226BF309510>]}
+
+
+============================== 19:56:10.675550 | 105a0fe5-cf4e-4759-b862-23f0df6a413c ==============================
+[0m19:56:10.675550 [info ] [MainThread]: Running with dbt=1.5.1
+[0m19:56:10.677253 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Lenovo\\.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'C:\\Users\\Lenovo\\Documents\\data_dbt_models_fullscript\\logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m19:56:10.960549 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '105a0fe5-cf4e-4759-b862-23f0df6a413c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000226BF372550>]}
+[0m19:56:10.972951 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '105a0fe5-cf4e-4759-b862-23f0df6a413c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000226BEFF2ED0>]}
+[0m19:56:10.982960 [debug] [MainThread]: checksum: 51f6b581eba8f8101bc020bf9faf8f96af641e2da86d581f66e2bdf0ff384b1c, vars: {}, profile: , target: , version: 1.5.1
+[0m19:56:11.047446 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m19:56:11.047446 [debug] [MainThread]: Partial parsing: updated file: full_script_retail://models\staging\stg_retail__customers.sql
+[0m19:56:11.066751 [debug] [MainThread]: 1699: static parser successfully parsed staging\stg_retail__customers.sql
+[0m19:56:11.113394 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.full_script_retail.example
+[0m19:56:11.121689 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '105a0fe5-cf4e-4759-b862-23f0df6a413c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000226BF3E2E50>]}
+[0m19:56:11.130199 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '105a0fe5-cf4e-4759-b862-23f0df6a413c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000226C01FBCD0>]}
+[0m19:56:11.131192 [info ] [MainThread]: Found 4 models, 12 tests, 0 snapshots, 0 analyses, 321 macros, 0 operations, 0 seed files, 4 sources, 0 exposures, 0 metrics, 0 groups
+[0m19:56:11.132193 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '105a0fe5-cf4e-4759-b862-23f0df6a413c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000226C023DDD0>]}
+[0m19:56:11.134194 [info ] [MainThread]: 
+[0m19:56:11.136192 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m19:56:11.138235 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ANALYTICS'
+[0m19:56:11.152194 [debug] [ThreadPool]: Using snowflake connection "list_ANALYTICS"
+[0m19:56:11.153209 [debug] [ThreadPool]: On list_ANALYTICS: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "full_script_retail", "target_name": "dev", "connection_name": "list_ANALYTICS"} */
+show terse schemas in database ANALYTICS
+    limit 10000
+[0m19:56:11.154218 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:56:12.376579 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1.0 seconds
+[0m19:56:12.380582 [debug] [ThreadPool]: On list_ANALYTICS: Close
+[0m19:56:12.629198 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ANALYTICS_ANALYTICS_CORE'
+[0m19:56:12.636249 [debug] [ThreadPool]: Using snowflake connection "list_ANALYTICS_ANALYTICS_CORE"
+[0m19:56:12.637247 [debug] [ThreadPool]: On list_ANALYTICS_ANALYTICS_CORE: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "full_script_retail", "target_name": "dev", "connection_name": "list_ANALYTICS_ANALYTICS_CORE"} */
+show terse objects in ANALYTICS.ANALYTICS_CORE
+[0m19:56:12.637247 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:56:13.424053 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1.0 seconds
+[0m19:56:13.428042 [debug] [ThreadPool]: On list_ANALYTICS_ANALYTICS_CORE: Close
+[0m19:56:13.718280 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '105a0fe5-cf4e-4759-b862-23f0df6a413c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000226BF76C9D0>]}
+[0m19:56:13.720333 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m19:56:13.722294 [info ] [MainThread]: 
+[0m19:56:13.735435 [debug] [Thread-1 (]: Began running node model.full_script_retail.stg_retail__customers
+[0m19:56:13.736465 [info ] [Thread-1 (]: 1 of 2 START sql view model ANALYTICS_CORE.stg_retail__customers ............... [RUN]
+[0m19:56:13.739437 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.full_script_retail.stg_retail__customers'
+[0m19:56:13.740491 [debug] [Thread-1 (]: Began compiling node model.full_script_retail.stg_retail__customers
+[0m19:56:13.743484 [debug] [Thread-1 (]: Writing injected SQL for node "model.full_script_retail.stg_retail__customers"
+[0m19:56:13.744438 [debug] [Thread-1 (]: Timing info for model.full_script_retail.stg_retail__customers (compile): 19:56:13.740491 => 19:56:13.744438
+[0m19:56:13.745442 [debug] [Thread-1 (]: Began executing node model.full_script_retail.stg_retail__customers
+[0m19:56:13.776435 [debug] [Thread-1 (]: Writing runtime sql for node "model.full_script_retail.stg_retail__customers"
+[0m19:56:13.778435 [debug] [Thread-1 (]: Using snowflake connection "model.full_script_retail.stg_retail__customers"
+[0m19:56:13.778435 [debug] [Thread-1 (]: On model.full_script_retail.stg_retail__customers: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "full_script_retail", "target_name": "dev", "node_id": "model.full_script_retail.stg_retail__customers"} */
+create or replace   view ANALYTICS.ANALYTICS_CORE.stg_retail__customers
+  
+   as (
+    with sources AS (
+    SELECT
+        *
+    FROM
+        snowflake_sample_data.tpch_sf1.customer
+),
+
+renamed AS (
+    SELECT
+        c_custkey AS customer_id,
+        c_nationkey AS nation_id,
+        MD5(c_name) AS customer_name,
+        c_address AS customer_address,
+        MD5(c_phone) AS phone_number,
+        c_acctbal AS account_balance,
+        c_mktsegment AS marketing_segment,
+        c_comment AS comments
+    FROM
+        sources
+)
+
+SELECT
+    *
+FROM
+    renamed
+  );
+[0m19:56:13.779435 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m19:56:14.887909 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m19:56:14.908312 [debug] [Thread-1 (]: Timing info for model.full_script_retail.stg_retail__customers (execute): 19:56:13.745442 => 19:56:14.908312
+[0m19:56:14.909307 [debug] [Thread-1 (]: On model.full_script_retail.stg_retail__customers: Close
+[0m19:56:15.130617 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '105a0fe5-cf4e-4759-b862-23f0df6a413c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000226BF001290>]}
+[0m19:56:15.131550 [info ] [Thread-1 (]: 1 of 2 OK created sql view model ANALYTICS_CORE.stg_retail__customers .......... [[32mSUCCESS 1[0m in 1.39s]
+[0m19:56:15.133542 [debug] [Thread-1 (]: Finished running node model.full_script_retail.stg_retail__customers
+[0m19:56:15.135544 [debug] [Thread-3 (]: Began running node model.full_script_retail.dim_retail__customers
+[0m19:56:15.136543 [info ] [Thread-3 (]: 2 of 2 START sql view model ANALYTICS_CORE.dim_customers ....................... [RUN]
+[0m19:56:15.138577 [debug] [Thread-3 (]: Acquiring new snowflake connection 'model.full_script_retail.dim_retail__customers'
+[0m19:56:15.138577 [debug] [Thread-3 (]: Began compiling node model.full_script_retail.dim_retail__customers
+[0m19:56:15.147215 [debug] [Thread-3 (]: Timing info for model.full_script_retail.dim_retail__customers (compile): 19:56:15.139584 => 19:56:15.146207
+[0m19:56:15.182047 [debug] [Thread-3 (]: Compilation Error in model dim_retail__customers (models\marts\dim_retail__customers.sql)
+  'sbt' is undefined. This can happen when calling a macro that does not exist. Check for typos and/or install package dependencies with "dbt deps".
+[0m19:56:15.183016 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '105a0fe5-cf4e-4759-b862-23f0df6a413c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000226C155AF10>]}
+[0m19:56:15.184017 [error] [Thread-3 (]: 2 of 2 ERROR creating sql view model ANALYTICS_CORE.dim_customers .............. [[31mERROR[0m in 0.05s]
+[0m19:56:15.186019 [debug] [Thread-3 (]: Finished running node model.full_script_retail.dim_retail__customers
+[0m19:56:15.189033 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:56:15.190069 [debug] [MainThread]: Connection 'list_ANALYTICS' was properly closed.
+[0m19:56:15.190069 [debug] [MainThread]: Connection 'list_ANALYTICS_ANALYTICS_CORE' was properly closed.
+[0m19:56:15.191034 [debug] [MainThread]: Connection 'model.full_script_retail.stg_retail__customers' was properly closed.
+[0m19:56:15.191034 [debug] [MainThread]: Connection 'model.full_script_retail.dim_retail__customers' was properly closed.
+[0m19:56:15.192033 [info ] [MainThread]: 
+[0m19:56:15.192561 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 4.06 seconds (4.06s).
+[0m19:56:15.194621 [debug] [MainThread]: Command end result
+[0m19:56:15.204613 [info ] [MainThread]: 
+[0m19:56:15.205422 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m19:56:15.207425 [info ] [MainThread]: 
+[0m19:56:15.208364 [error] [MainThread]: [33mCompilation Error in model dim_retail__customers (models\marts\dim_retail__customers.sql)[0m
+[0m19:56:15.210560 [error] [MainThread]:   'sbt' is undefined. This can happen when calling a macro that does not exist. Check for typos and/or install package dependencies with "dbt deps".
+[0m19:56:15.211570 [info ] [MainThread]: 
+[0m19:56:15.212503 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=1 SKIP=0 TOTAL=2
+[0m19:56:15.213501 [debug] [MainThread]: Command `dbt run` failed at 19:56:15.213501 after 4.56 seconds
+[0m19:56:15.214522 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000226B8FE6B50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000226B9040B10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000226B9043450>]}
+[0m19:56:15.214522 [debug] [MainThread]: Flushing usage events
+[0m19:57:20.241905 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F429EA1F50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F429E91810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F42A5CB590>]}
+
+
+============================== 19:57:20.245950 | 7546fcfc-ef37-4ef3-ae68-85b327665c1c ==============================
+[0m19:57:20.245950 [info ] [MainThread]: Running with dbt=1.5.1
+[0m19:57:20.247906 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Lenovo\\.dbt', 'log_path': 'C:\\Users\\Lenovo\\Documents\\data_dbt_models_fullscript\\logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m19:57:20.540323 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7546fcfc-ef37-4ef3-ae68-85b327665c1c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F42A5D0410>]}
+[0m19:57:20.551324 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '7546fcfc-ef37-4ef3-ae68-85b327665c1c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F42AEE7150>]}
+[0m19:57:20.561470 [debug] [MainThread]: checksum: 51f6b581eba8f8101bc020bf9faf8f96af641e2da86d581f66e2bdf0ff384b1c, vars: {}, profile: , target: , version: 1.5.1
+[0m19:57:20.623573 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m19:57:20.624571 [debug] [MainThread]: Partial parsing: updated file: full_script_retail://models\marts\dim_retail__customers.sql
+[0m19:57:20.641952 [debug] [MainThread]: 1603: static parser failed on marts\dim_retail__customers.sql
+[0m19:57:20.660067 [debug] [MainThread]: 1602: parser fallback to jinja rendering on marts\dim_retail__customers.sql
+[0m19:57:20.695505 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.full_script_retail.example
+[0m19:57:20.704778 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '7546fcfc-ef37-4ef3-ae68-85b327665c1c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F42B0D0950>]}
+[0m19:57:20.713763 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7546fcfc-ef37-4ef3-ae68-85b327665c1c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F42B0E3750>]}
+[0m19:57:20.713763 [info ] [MainThread]: Found 4 models, 12 tests, 0 snapshots, 0 analyses, 321 macros, 0 operations, 0 seed files, 4 sources, 0 exposures, 0 metrics, 0 groups
+[0m19:57:20.714821 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7546fcfc-ef37-4ef3-ae68-85b327665c1c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F42AFABDD0>]}
+[0m19:57:20.722758 [info ] [MainThread]: 
+[0m19:57:20.742761 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m19:57:20.745818 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ANALYTICS'
+[0m19:57:20.763762 [debug] [ThreadPool]: Using snowflake connection "list_ANALYTICS"
+[0m19:57:20.764762 [debug] [ThreadPool]: On list_ANALYTICS: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "full_script_retail", "target_name": "dev", "connection_name": "list_ANALYTICS"} */
+show terse schemas in database ANALYTICS
+    limit 10000
+[0m19:57:20.764762 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:57:21.651452 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1.0 seconds
+[0m19:57:21.655451 [debug] [ThreadPool]: On list_ANALYTICS: Close
+[0m19:57:21.772391 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ANALYTICS_ANALYTICS_CORE'
+[0m19:57:21.782389 [debug] [ThreadPool]: Using snowflake connection "list_ANALYTICS_ANALYTICS_CORE"
+[0m19:57:21.783389 [debug] [ThreadPool]: On list_ANALYTICS_ANALYTICS_CORE: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "full_script_retail", "target_name": "dev", "connection_name": "list_ANALYTICS_ANALYTICS_CORE"} */
+show terse objects in ANALYTICS.ANALYTICS_CORE
+[0m19:57:21.783389 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:57:22.470354 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 1.0 seconds
+[0m19:57:22.474592 [debug] [ThreadPool]: On list_ANALYTICS_ANALYTICS_CORE: Close
+[0m19:57:22.597677 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7546fcfc-ef37-4ef3-ae68-85b327665c1c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F429E8E410>]}
+[0m19:57:22.599628 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m19:57:22.601623 [info ] [MainThread]: 
+[0m19:57:22.612514 [debug] [Thread-1 (]: Began running node model.full_script_retail.stg_retail__orders
+[0m19:57:22.612514 [info ] [Thread-1 (]: 1 of 3 START sql view model ANALYTICS_CORE.stg_retail__orders .................. [RUN]
+[0m19:57:22.614678 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.full_script_retail.stg_retail__orders'
+[0m19:57:22.615718 [debug] [Thread-1 (]: Began compiling node model.full_script_retail.stg_retail__orders
+[0m19:57:22.619678 [debug] [Thread-1 (]: Writing injected SQL for node "model.full_script_retail.stg_retail__orders"
+[0m19:57:22.621684 [debug] [Thread-1 (]: Timing info for model.full_script_retail.stg_retail__orders (compile): 19:57:22.616679 => 19:57:22.621684
+[0m19:57:22.622707 [debug] [Thread-1 (]: Began executing node model.full_script_retail.stg_retail__orders
+[0m19:57:22.652717 [debug] [Thread-1 (]: Writing runtime sql for node "model.full_script_retail.stg_retail__orders"
+[0m19:57:22.654677 [debug] [Thread-1 (]: Using snowflake connection "model.full_script_retail.stg_retail__orders"
+[0m19:57:22.655731 [debug] [Thread-1 (]: On model.full_script_retail.stg_retail__orders: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "full_script_retail", "target_name": "dev", "node_id": "model.full_script_retail.stg_retail__orders"} */
+create or replace   view ANALYTICS.ANALYTICS_CORE.stg_retail__orders
+  
+   as (
+    with sources AS (
+    SELECT
+        *
+    FROM
+        snowflake_sample_data.tpch_sf1.orders
+)
+
+
+renamed AS (
+    SELECT
+        o_orderkey AS order_id,
+        o_custkey AS customer_id,
+        o_clerk as clerk_id,
+        0_orderstatus AS order_status,
+        o_totalprice AS total_price,
+        o_orderdate::DATE AS created_at,
+        o_orderpriority AS priority,
+        o_shippriority as shipping_priority,
+        o_comment as comments
+    FROM
+        sources
+)
+
+SELECT
+    *
+FROM
+    renamed
+  );
+[0m19:57:22.655731 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m19:57:23.204774 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01aced9d-0001-2521-0004-1622000110a6
+[0m19:57:23.205772 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 12 at position 0 unexpected 'renamed'.
+syntax error line 27 at position 0 unexpected 'SELECT'.
+[0m19:57:23.206772 [debug] [Thread-1 (]: Timing info for model.full_script_retail.stg_retail__orders (execute): 19:57:22.623677 => 19:57:23.206772
+[0m19:57:23.207924 [debug] [Thread-1 (]: On model.full_script_retail.stg_retail__orders: Close
+[0m19:57:23.326906 [debug] [Thread-1 (]: Database Error in model stg_retail__orders (models\staging\stg_retail__orders.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 12 at position 0 unexpected 'renamed'.
+  syntax error line 27 at position 0 unexpected 'SELECT'.
+  compiled Code at target\run\full_script_retail\models\staging\stg_retail__orders.sql
+[0m19:57:23.326906 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7546fcfc-ef37-4ef3-ae68-85b327665c1c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F42B159E90>]}
+[0m19:57:23.327861 [error] [Thread-1 (]: 1 of 3 ERROR creating sql view model ANALYTICS_CORE.stg_retail__orders ......... [[31mERROR[0m in 0.71s]
+[0m19:57:23.329866 [debug] [Thread-1 (]: Finished running node model.full_script_retail.stg_retail__orders
+[0m19:57:23.331861 [debug] [Thread-3 (]: Began running node model.full_script_retail.int_retail__customer_order_aggregated
+[0m19:57:23.332860 [info ] [Thread-3 (]: 2 of 3 SKIP relation ANALYTICS_CORE.int_retail__customer_order_aggregated ...... [[33mSKIP[0m]
+[0m19:57:23.335870 [debug] [Thread-3 (]: Finished running node model.full_script_retail.int_retail__customer_order_aggregated
+[0m19:57:23.337863 [debug] [Thread-2 (]: Began running node model.full_script_retail.dim_retail__customers
+[0m19:57:23.338862 [info ] [Thread-2 (]: 3 of 3 SKIP relation ANALYTICS_CORE.dim_retail__customers ...................... [[33mSKIP[0m]
+[0m19:57:23.339861 [debug] [Thread-2 (]: Finished running node model.full_script_retail.dim_retail__customers
+[0m19:57:23.341862 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:57:23.342884 [debug] [MainThread]: Connection 'list_ANALYTICS' was properly closed.
+[0m19:57:23.342884 [debug] [MainThread]: Connection 'list_ANALYTICS_ANALYTICS_CORE' was properly closed.
+[0m19:57:23.343861 [debug] [MainThread]: Connection 'model.full_script_retail.stg_retail__orders' was properly closed.
+[0m19:57:23.343861 [info ] [MainThread]: 
+[0m19:57:23.344877 [info ] [MainThread]: Finished running 3 view models in 0 hours 0 minutes and 2.60 seconds (2.60s).
+[0m19:57:23.345863 [debug] [MainThread]: Command end result
+[0m19:57:23.355872 [info ] [MainThread]: 
+[0m19:57:23.356860 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m19:57:23.356860 [info ] [MainThread]: 
+[0m19:57:23.357860 [error] [MainThread]: [33mDatabase Error in model stg_retail__orders (models\staging\stg_retail__orders.sql)[0m
+[0m19:57:23.358862 [error] [MainThread]:   001003 (42000): SQL compilation error:
+[0m19:57:23.359860 [error] [MainThread]:   syntax error line 12 at position 0 unexpected 'renamed'.
+[0m19:57:23.360885 [error] [MainThread]:   syntax error line 27 at position 0 unexpected 'SELECT'.
+[0m19:57:23.361862 [error] [MainThread]:   compiled Code at target\run\full_script_retail\models\staging\stg_retail__orders.sql
+[0m19:57:23.362863 [info ] [MainThread]: 
+[0m19:57:23.363869 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=2 TOTAL=3
+[0m19:57:23.364862 [debug] [MainThread]: Command `dbt run` failed at 19:57:23.364862 after 3.15 seconds
+[0m19:57:23.364862 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F42A618E10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F427745E90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F42AF09CD0>]}
+[0m19:57:23.365862 [debug] [MainThread]: Flushing usage events
+[0m19:57:43.224767 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024BD88C4050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024BD80BF310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024BD8330450>]}
+
+
+============================== 19:57:43.229590 | abeff84f-f49f-4b0c-90dd-5e160065e39a ==============================
+[0m19:57:43.229590 [info ] [MainThread]: Running with dbt=1.5.1
+[0m19:57:43.232145 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Lenovo\\.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Users\\Lenovo\\Documents\\data_dbt_models_fullscript\\logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m19:57:43.510730 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'abeff84f-f49f-4b0c-90dd-5e160065e39a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024BD4A9DD10>]}
+[0m19:57:43.522003 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'abeff84f-f49f-4b0c-90dd-5e160065e39a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024BD9342050>]}
+[0m19:57:43.533050 [debug] [MainThread]: checksum: 51f6b581eba8f8101bc020bf9faf8f96af641e2da86d581f66e2bdf0ff384b1c, vars: {}, profile: , target: , version: 1.5.1
+[0m19:57:43.599199 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m19:57:43.600201 [debug] [MainThread]: Partial parsing: updated file: full_script_retail://models\staging\stg_retail__orders.sql
+[0m19:57:43.618526 [debug] [MainThread]: 1699: static parser successfully parsed staging\stg_retail__orders.sql
+[0m19:57:43.674018 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.full_script_retail.example
+[0m19:57:43.682018 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'abeff84f-f49f-4b0c-90dd-5e160065e39a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024BD8312C50>]}
+[0m19:57:43.692017 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'abeff84f-f49f-4b0c-90dd-5e160065e39a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024BD940E7D0>]}
+[0m19:57:43.693019 [info ] [MainThread]: Found 4 models, 12 tests, 0 snapshots, 0 analyses, 321 macros, 0 operations, 0 seed files, 4 sources, 0 exposures, 0 metrics, 0 groups
+[0m19:57:43.694073 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'abeff84f-f49f-4b0c-90dd-5e160065e39a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024BD8050C50>]}
+[0m19:57:43.696056 [info ] [MainThread]: 
+[0m19:57:43.697017 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m19:57:43.699534 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ANALYTICS'
+[0m19:57:43.714599 [debug] [ThreadPool]: Using snowflake connection "list_ANALYTICS"
+[0m19:57:43.714599 [debug] [ThreadPool]: On list_ANALYTICS: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "full_script_retail", "target_name": "dev", "connection_name": "list_ANALYTICS"} */
+show terse schemas in database ANALYTICS
+    limit 10000
+[0m19:57:43.715538 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:57:44.582185 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1.0 seconds
+[0m19:57:44.586189 [debug] [ThreadPool]: On list_ANALYTICS: Close
+[0m19:57:44.703057 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ANALYTICS_ANALYTICS_CORE'
+[0m19:57:44.711115 [debug] [ThreadPool]: Using snowflake connection "list_ANALYTICS_ANALYTICS_CORE"
+[0m19:57:44.711115 [debug] [ThreadPool]: On list_ANALYTICS_ANALYTICS_CORE: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "full_script_retail", "target_name": "dev", "connection_name": "list_ANALYTICS_ANALYTICS_CORE"} */
+show terse objects in ANALYTICS.ANALYTICS_CORE
+[0m19:57:44.712115 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:57:45.307610 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 1.0 seconds
+[0m19:57:45.312599 [debug] [ThreadPool]: On list_ANALYTICS_ANALYTICS_CORE: Close
+[0m19:57:45.439412 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'abeff84f-f49f-4b0c-90dd-5e160065e39a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024BD9547E50>]}
+[0m19:57:45.441443 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m19:57:45.442395 [info ] [MainThread]: 
+[0m19:57:45.454398 [debug] [Thread-1 (]: Began running node model.full_script_retail.stg_retail__orders
+[0m19:57:45.455400 [info ] [Thread-1 (]: 1 of 3 START sql view model ANALYTICS_CORE.stg_retail__orders .................. [RUN]
+[0m19:57:45.457692 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.full_script_retail.stg_retail__orders'
+[0m19:57:45.458637 [debug] [Thread-1 (]: Began compiling node model.full_script_retail.stg_retail__orders
+[0m19:57:45.461684 [debug] [Thread-1 (]: Writing injected SQL for node "model.full_script_retail.stg_retail__orders"
+[0m19:57:45.463647 [debug] [Thread-1 (]: Timing info for model.full_script_retail.stg_retail__orders (compile): 19:57:45.458637 => 19:57:45.462633
+[0m19:57:45.463647 [debug] [Thread-1 (]: Began executing node model.full_script_retail.stg_retail__orders
+[0m19:57:45.497633 [debug] [Thread-1 (]: Writing runtime sql for node "model.full_script_retail.stg_retail__orders"
+[0m19:57:45.499639 [debug] [Thread-1 (]: Using snowflake connection "model.full_script_retail.stg_retail__orders"
+[0m19:57:45.500635 [debug] [Thread-1 (]: On model.full_script_retail.stg_retail__orders: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "full_script_retail", "target_name": "dev", "node_id": "model.full_script_retail.stg_retail__orders"} */
+create or replace   view ANALYTICS.ANALYTICS_CORE.stg_retail__orders
+  
+   as (
+    with sources AS (
+    SELECT
+        *
+    FROM
+        snowflake_sample_data.tpch_sf1.orders
+),
+
+renamed AS (
+    SELECT
+        o_orderkey AS order_id,
+        o_custkey AS customer_id,
+        o_clerk as clerk_id,
+        0_orderstatus AS order_status,
+        o_totalprice AS total_price,
+        o_orderdate::DATE AS created_at,
+        o_orderpriority AS priority,
+        o_shippriority as shipping_priority,
+        o_comment as comments
+    FROM
+        sources
+)
+
+SELECT
+    *
+FROM
+    renamed
+  );
+[0m19:57:45.500635 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m19:57:46.058883 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01aced9d-0001-2569-0004-1622000130ca
+[0m19:57:46.059929 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 16 at position 22 unexpected 'AS'.
+syntax error line 17 at position 24 unexpected 'total_price'.
+syntax error line 18 at position 19 unexpected '::'.
+syntax error line 19 at position 27 unexpected 'priority'.
+syntax error line 20 at position 26 unexpected 'shipping_priority'.
+syntax error line 21 at position 21 unexpected 'comments'.
+syntax error line 26 at position 0 unexpected 'SELECT'.
+[0m19:57:46.060875 [debug] [Thread-1 (]: Timing info for model.full_script_retail.stg_retail__orders (execute): 19:57:45.464680 => 19:57:46.060875
+[0m19:57:46.061915 [debug] [Thread-1 (]: On model.full_script_retail.stg_retail__orders: Close
+[0m19:57:46.197159 [debug] [Thread-1 (]: Database Error in model stg_retail__orders (models\staging\stg_retail__orders.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 16 at position 22 unexpected 'AS'.
+  syntax error line 17 at position 24 unexpected 'total_price'.
+  syntax error line 18 at position 19 unexpected '::'.
+  syntax error line 19 at position 27 unexpected 'priority'.
+  syntax error line 20 at position 26 unexpected 'shipping_priority'.
+  syntax error line 21 at position 21 unexpected 'comments'.
+  syntax error line 26 at position 0 unexpected 'SELECT'.
+  compiled Code at target\run\full_script_retail\models\staging\stg_retail__orders.sql
+[0m19:57:46.198159 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'abeff84f-f49f-4b0c-90dd-5e160065e39a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024BD92DB990>]}
+[0m19:57:46.199155 [error] [Thread-1 (]: 1 of 3 ERROR creating sql view model ANALYTICS_CORE.stg_retail__orders ......... [[31mERROR[0m in 0.74s]
+[0m19:57:46.200171 [debug] [Thread-1 (]: Finished running node model.full_script_retail.stg_retail__orders
+[0m19:57:46.202111 [debug] [Thread-3 (]: Began running node model.full_script_retail.int_retail__customer_order_aggregated
+[0m19:57:46.203154 [info ] [Thread-3 (]: 2 of 3 SKIP relation ANALYTICS_CORE.int_retail__customer_order_aggregated ...... [[33mSKIP[0m]
+[0m19:57:46.205172 [debug] [Thread-3 (]: Finished running node model.full_script_retail.int_retail__customer_order_aggregated
+[0m19:57:46.206145 [debug] [Thread-2 (]: Began running node model.full_script_retail.dim_retail__customers
+[0m19:57:46.207187 [info ] [Thread-2 (]: 3 of 3 SKIP relation ANALYTICS_CORE.dim_retail__customers ...................... [[33mSKIP[0m]
+[0m19:57:46.208046 [debug] [Thread-2 (]: Finished running node model.full_script_retail.dim_retail__customers
+[0m19:57:46.211209 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:57:46.212255 [debug] [MainThread]: Connection 'list_ANALYTICS' was properly closed.
+[0m19:57:46.212255 [debug] [MainThread]: Connection 'list_ANALYTICS_ANALYTICS_CORE' was properly closed.
+[0m19:57:46.213212 [debug] [MainThread]: Connection 'model.full_script_retail.stg_retail__orders' was properly closed.
+[0m19:57:46.213212 [info ] [MainThread]: 
+[0m19:57:46.214404 [info ] [MainThread]: Finished running 3 view models in 0 hours 0 minutes and 2.52 seconds (2.52s).
+[0m19:57:46.216411 [debug] [MainThread]: Command end result
+[0m19:57:46.223407 [info ] [MainThread]: 
+[0m19:57:46.224446 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m19:57:46.225845 [info ] [MainThread]: 
+[0m19:57:46.227857 [error] [MainThread]: [33mDatabase Error in model stg_retail__orders (models\staging\stg_retail__orders.sql)[0m
+[0m19:57:46.228998 [error] [MainThread]:   001003 (42000): SQL compilation error:
+[0m19:57:46.230072 [error] [MainThread]:   syntax error line 16 at position 22 unexpected 'AS'.
+[0m19:57:46.231077 [error] [MainThread]:   syntax error line 17 at position 24 unexpected 'total_price'.
+[0m19:57:46.233077 [error] [MainThread]:   syntax error line 18 at position 19 unexpected '::'.
+[0m19:57:46.234077 [error] [MainThread]:   syntax error line 19 at position 27 unexpected 'priority'.
+[0m19:57:46.236078 [error] [MainThread]:   syntax error line 20 at position 26 unexpected 'shipping_priority'.
+[0m19:57:46.238079 [error] [MainThread]:   syntax error line 21 at position 21 unexpected 'comments'.
+[0m19:57:46.240074 [error] [MainThread]:   syntax error line 26 at position 0 unexpected 'SELECT'.
+[0m19:57:46.241089 [error] [MainThread]:   compiled Code at target\run\full_script_retail\models\staging\stg_retail__orders.sql
+[0m19:57:46.242123 [info ] [MainThread]: 
+[0m19:57:46.243131 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=2 TOTAL=3
+[0m19:57:46.244126 [debug] [MainThread]: Command `dbt run` failed at 19:57:46.244126 after 3.04 seconds
+[0m19:57:46.245167 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024BD862C150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024BD20FA890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024BD625E610>]}
+[0m19:57:46.245167 [debug] [MainThread]: Flushing usage events
+[0m19:58:49.285476 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000177930EFC50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017793370FD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017793409FD0>]}
+
+
+============================== 19:58:49.290787 | d9f09ee5-f0bd-4b4f-b171-87e9a0153f7f ==============================
+[0m19:58:49.290787 [info ] [MainThread]: Running with dbt=1.5.1
+[0m19:58:49.292362 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Lenovo\\.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\Users\\Lenovo\\Documents\\data_dbt_models_fullscript\\logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m19:58:49.568972 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd9f09ee5-f0bd-4b4f-b171-87e9a0153f7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017793164F90>]}
+[0m19:58:49.580383 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd9f09ee5-f0bd-4b4f-b171-87e9a0153f7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000177938AD910>]}
+[0m19:58:49.591764 [debug] [MainThread]: checksum: 51f6b581eba8f8101bc020bf9faf8f96af641e2da86d581f66e2bdf0ff384b1c, vars: {}, profile: , target: , version: 1.5.1
+[0m19:58:49.656033 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m19:58:49.656033 [debug] [MainThread]: Partial parsing: updated file: full_script_retail://models\staging\stg_retail__orders.sql
+[0m19:58:49.674344 [debug] [MainThread]: 1699: static parser successfully parsed staging\stg_retail__orders.sql
+[0m19:58:49.726057 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.full_script_retail.example
+[0m19:58:49.734108 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd9f09ee5-f0bd-4b4f-b171-87e9a0153f7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000177941D9510>]}
+[0m19:58:49.744522 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd9f09ee5-f0bd-4b4f-b171-87e9a0153f7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000177942D0490>]}
+[0m19:58:49.745514 [info ] [MainThread]: Found 4 models, 12 tests, 0 snapshots, 0 analyses, 321 macros, 0 operations, 0 seed files, 4 sources, 0 exposures, 0 metrics, 0 groups
+[0m19:58:49.746295 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd9f09ee5-f0bd-4b4f-b171-87e9a0153f7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017793519210>]}
+[0m19:58:49.748340 [info ] [MainThread]: 
+[0m19:58:49.751303 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m19:58:49.753306 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ANALYTICS'
+[0m19:58:49.767358 [debug] [ThreadPool]: Using snowflake connection "list_ANALYTICS"
+[0m19:58:49.768300 [debug] [ThreadPool]: On list_ANALYTICS: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "full_script_retail", "target_name": "dev", "connection_name": "list_ANALYTICS"} */
+show terse schemas in database ANALYTICS
+    limit 10000
+[0m19:58:49.769337 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:58:51.621043 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 2.0 seconds
+[0m19:58:51.625093 [debug] [ThreadPool]: On list_ANALYTICS: Close
+[0m19:58:51.816661 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ANALYTICS_ANALYTICS_CORE'
+[0m19:58:51.825870 [debug] [ThreadPool]: Using snowflake connection "list_ANALYTICS_ANALYTICS_CORE"
+[0m19:58:51.826881 [debug] [ThreadPool]: On list_ANALYTICS_ANALYTICS_CORE: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "full_script_retail", "target_name": "dev", "connection_name": "list_ANALYTICS_ANALYTICS_CORE"} */
+show terse objects in ANALYTICS.ANALYTICS_CORE
+[0m19:58:51.826881 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:58:52.561037 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 1.0 seconds
+[0m19:58:52.563096 [debug] [ThreadPool]: On list_ANALYTICS_ANALYTICS_CORE: Close
+[0m19:58:52.748051 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd9f09ee5-f0bd-4b4f-b171-87e9a0153f7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000177941D80D0>]}
+[0m19:58:52.749129 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m19:58:52.751049 [info ] [MainThread]: 
+[0m19:58:52.759769 [debug] [Thread-1 (]: Began running node model.full_script_retail.stg_retail__orders
+[0m19:58:52.760725 [info ] [Thread-1 (]: 1 of 3 START sql view model ANALYTICS_CORE.stg_retail__orders .................. [RUN]
+[0m19:58:52.761726 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.full_script_retail.stg_retail__orders'
+[0m19:58:52.762726 [debug] [Thread-1 (]: Began compiling node model.full_script_retail.stg_retail__orders
+[0m19:58:52.765724 [debug] [Thread-1 (]: Writing injected SQL for node "model.full_script_retail.stg_retail__orders"
+[0m19:58:52.766736 [debug] [Thread-1 (]: Timing info for model.full_script_retail.stg_retail__orders (compile): 19:58:52.762726 => 19:58:52.766736
+[0m19:58:52.767727 [debug] [Thread-1 (]: Began executing node model.full_script_retail.stg_retail__orders
+[0m19:58:52.799867 [debug] [Thread-1 (]: Writing runtime sql for node "model.full_script_retail.stg_retail__orders"
+[0m19:58:52.801867 [debug] [Thread-1 (]: Using snowflake connection "model.full_script_retail.stg_retail__orders"
+[0m19:58:52.802868 [debug] [Thread-1 (]: On model.full_script_retail.stg_retail__orders: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "full_script_retail", "target_name": "dev", "node_id": "model.full_script_retail.stg_retail__orders"} */
+create or replace   view ANALYTICS.ANALYTICS_CORE.stg_retail__orders
+  
+   as (
+    with sources AS (
+    SELECT
+        *
+    FROM
+        snowflake_sample_data.tpch_sf1.orders
+),
+
+renamed AS (
+    SELECT
+        o_orderkey AS order_id,
+        o_custkey AS customer_id,
+        o_clerk AS clerk_id,
+        0_orderstatus AS order_status,
+        o_totalprice AS total_price,
+        o_orderdate :: DATE AS created_at,
+        o_orderpriority AS priority,
+        o_shippriority AS shipping_priority,
+        o_comment AS comments
+    FROM
+        sources
+)
+
+SELECT
+    *
+FROM
+    renamed
+  );
+[0m19:58:52.803869 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m19:58:53.455826 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01aced9e-0001-2569-0004-1622000130d6
+[0m19:58:53.456811 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 16 at position 22 unexpected 'AS'.
+syntax error line 17 at position 24 unexpected 'total_price'.
+syntax error line 18 at position 20 unexpected '::'.
+syntax error line 19 at position 27 unexpected 'priority'.
+syntax error line 20 at position 26 unexpected 'shipping_priority'.
+syntax error line 21 at position 21 unexpected 'comments'.
+syntax error line 26 at position 0 unexpected 'SELECT'.
+[0m19:58:53.457774 [debug] [Thread-1 (]: Timing info for model.full_script_retail.stg_retail__orders (execute): 19:58:52.767727 => 19:58:53.456811
+[0m19:58:53.457774 [debug] [Thread-1 (]: On model.full_script_retail.stg_retail__orders: Close
+[0m19:58:53.609492 [debug] [Thread-1 (]: Database Error in model stg_retail__orders (models\staging\stg_retail__orders.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 16 at position 22 unexpected 'AS'.
+  syntax error line 17 at position 24 unexpected 'total_price'.
+  syntax error line 18 at position 20 unexpected '::'.
+  syntax error line 19 at position 27 unexpected 'priority'.
+  syntax error line 20 at position 26 unexpected 'shipping_priority'.
+  syntax error line 21 at position 21 unexpected 'comments'.
+  syntax error line 26 at position 0 unexpected 'SELECT'.
+  compiled Code at target\run\full_script_retail\models\staging\stg_retail__orders.sql
+[0m19:58:53.610510 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd9f09ee5-f0bd-4b4f-b171-87e9a0153f7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000177955FA890>]}
+[0m19:58:53.611438 [error] [Thread-1 (]: 1 of 3 ERROR creating sql view model ANALYTICS_CORE.stg_retail__orders ......... [[31mERROR[0m in 0.85s]
+[0m19:58:53.612437 [debug] [Thread-1 (]: Finished running node model.full_script_retail.stg_retail__orders
+[0m19:58:53.614438 [debug] [Thread-3 (]: Began running node model.full_script_retail.int_retail__customer_order_aggregated
+[0m19:58:53.615437 [info ] [Thread-3 (]: 2 of 3 SKIP relation ANALYTICS_CORE.int_retail__customer_order_aggregated ...... [[33mSKIP[0m]
+[0m19:58:53.617446 [debug] [Thread-3 (]: Finished running node model.full_script_retail.int_retail__customer_order_aggregated
+[0m19:58:53.619439 [debug] [Thread-2 (]: Began running node model.full_script_retail.dim_retail__customers
+[0m19:58:53.620465 [info ] [Thread-2 (]: 3 of 3 SKIP relation ANALYTICS_CORE.dim_retail__customers ...................... [[33mSKIP[0m]
+[0m19:58:53.621439 [debug] [Thread-2 (]: Finished running node model.full_script_retail.dim_retail__customers
+[0m19:58:53.624549 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:58:53.625568 [debug] [MainThread]: Connection 'list_ANALYTICS' was properly closed.
+[0m19:58:53.625568 [debug] [MainThread]: Connection 'list_ANALYTICS_ANALYTICS_CORE' was properly closed.
+[0m19:58:53.626550 [debug] [MainThread]: Connection 'model.full_script_retail.stg_retail__orders' was properly closed.
+[0m19:58:53.626550 [info ] [MainThread]: 
+[0m19:58:53.627548 [info ] [MainThread]: Finished running 3 view models in 0 hours 0 minutes and 3.88 seconds (3.88s).
+[0m19:58:53.628561 [debug] [MainThread]: Command end result
+[0m19:58:53.637582 [info ] [MainThread]: 
+[0m19:58:53.638553 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m19:58:53.640549 [info ] [MainThread]: 
+[0m19:58:53.642286 [error] [MainThread]: [33mDatabase Error in model stg_retail__orders (models\staging\stg_retail__orders.sql)[0m
+[0m19:58:53.643192 [error] [MainThread]:   001003 (42000): SQL compilation error:
+[0m19:58:53.644265 [error] [MainThread]:   syntax error line 16 at position 22 unexpected 'AS'.
+[0m19:58:53.645231 [error] [MainThread]:   syntax error line 17 at position 24 unexpected 'total_price'.
+[0m19:58:53.647238 [error] [MainThread]:   syntax error line 18 at position 20 unexpected '::'.
+[0m19:58:53.647238 [error] [MainThread]:   syntax error line 19 at position 27 unexpected 'priority'.
+[0m19:58:53.648262 [error] [MainThread]:   syntax error line 20 at position 26 unexpected 'shipping_priority'.
+[0m19:58:53.649259 [error] [MainThread]:   syntax error line 21 at position 21 unexpected 'comments'.
+[0m19:58:53.650259 [error] [MainThread]:   syntax error line 26 at position 0 unexpected 'SELECT'.
+[0m19:58:53.651272 [error] [MainThread]:   compiled Code at target\run\full_script_retail\models\staging\stg_retail__orders.sql
+[0m19:58:53.652258 [info ] [MainThread]: 
+[0m19:58:53.654274 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=2 TOTAL=3
+[0m19:58:53.656261 [debug] [MainThread]: Command `dbt run` failed at 19:58:53.656261 after 4.39 seconds
+[0m19:58:53.657258 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001779387AFD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017792E800D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001779108E550>]}
+[0m19:58:53.657258 [debug] [MainThread]: Flushing usage events
+[0m19:59:33.287757 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001934C32EB90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001934C0A0590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001934C369D10>]}
+
+
+============================== 19:59:33.291696 | 49af066c-ae2c-411f-9393-89f617907aa7 ==============================
+[0m19:59:33.291696 [info ] [MainThread]: Running with dbt=1.5.1
+[0m19:59:33.292874 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Users\\Lenovo\\Documents\\data_dbt_models_fullscript\\logs', 'profiles_dir': 'C:\\Users\\Lenovo\\.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m19:59:33.572443 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '49af066c-ae2c-411f-9393-89f617907aa7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001934C32EB90>]}
+[0m19:59:33.585759 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '49af066c-ae2c-411f-9393-89f617907aa7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001934D0E3FD0>]}
+[0m19:59:33.596184 [debug] [MainThread]: checksum: 51f6b581eba8f8101bc020bf9faf8f96af641e2da86d581f66e2bdf0ff384b1c, vars: {}, profile: , target: , version: 1.5.1
+[0m19:59:33.655277 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m19:59:33.656274 [debug] [MainThread]: Partial parsing: updated file: full_script_retail://models\staging\stg_retail__orders.sql
+[0m19:59:33.673612 [debug] [MainThread]: 1699: static parser successfully parsed staging\stg_retail__orders.sql
+[0m19:59:33.725799 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.full_script_retail.example
+[0m19:59:33.734804 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '49af066c-ae2c-411f-9393-89f617907aa7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001934D0FFDD0>]}
+[0m19:59:33.745857 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '49af066c-ae2c-411f-9393-89f617907aa7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001934D2A5690>]}
+[0m19:59:33.746806 [info ] [MainThread]: Found 4 models, 12 tests, 0 snapshots, 0 analyses, 321 macros, 0 operations, 0 seed files, 4 sources, 0 exposures, 0 metrics, 0 groups
+[0m19:59:33.747526 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '49af066c-ae2c-411f-9393-89f617907aa7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001934D0EA690>]}
+[0m19:59:33.749571 [info ] [MainThread]: 
+[0m19:59:33.751571 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m19:59:33.754589 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ANALYTICS'
+[0m19:59:33.767226 [debug] [ThreadPool]: Using snowflake connection "list_ANALYTICS"
+[0m19:59:33.768226 [debug] [ThreadPool]: On list_ANALYTICS: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "full_script_retail", "target_name": "dev", "connection_name": "list_ANALYTICS"} */
+show terse schemas in database ANALYTICS
+    limit 10000
+[0m19:59:33.769228 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:59:34.885460 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1.0 seconds
+[0m19:59:34.887456 [debug] [ThreadPool]: On list_ANALYTICS: Close
+[0m19:59:35.122615 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ANALYTICS_ANALYTICS_CORE'
+[0m19:59:35.129644 [debug] [ThreadPool]: Using snowflake connection "list_ANALYTICS_ANALYTICS_CORE"
+[0m19:59:35.130578 [debug] [ThreadPool]: On list_ANALYTICS_ANALYTICS_CORE: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "full_script_retail", "target_name": "dev", "connection_name": "list_ANALYTICS_ANALYTICS_CORE"} */
+show terse objects in ANALYTICS.ANALYTICS_CORE
+[0m19:59:35.130578 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:59:35.957865 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 1.0 seconds
+[0m19:59:35.960829 [debug] [ThreadPool]: On list_ANALYTICS_ANALYTICS_CORE: Close
+[0m19:59:36.142915 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '49af066c-ae2c-411f-9393-89f617907aa7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001934BE31B10>]}
+[0m19:59:36.145913 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m19:59:36.147867 [info ] [MainThread]: 
+[0m19:59:36.158871 [debug] [Thread-1 (]: Began running node model.full_script_retail.stg_retail__orders
+[0m19:59:36.159876 [info ] [Thread-1 (]: 1 of 3 START sql view model ANALYTICS_CORE.stg_retail__orders .................. [RUN]
+[0m19:59:36.161871 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.full_script_retail.stg_retail__orders'
+[0m19:59:36.162871 [debug] [Thread-1 (]: Began compiling node model.full_script_retail.stg_retail__orders
+[0m19:59:36.165870 [debug] [Thread-1 (]: Writing injected SQL for node "model.full_script_retail.stg_retail__orders"
+[0m19:59:36.166872 [debug] [Thread-1 (]: Timing info for model.full_script_retail.stg_retail__orders (compile): 19:59:36.162871 => 19:59:36.166872
+[0m19:59:36.167870 [debug] [Thread-1 (]: Began executing node model.full_script_retail.stg_retail__orders
+[0m19:59:36.201870 [debug] [Thread-1 (]: Writing runtime sql for node "model.full_script_retail.stg_retail__orders"
+[0m19:59:36.203872 [debug] [Thread-1 (]: Using snowflake connection "model.full_script_retail.stg_retail__orders"
+[0m19:59:36.204892 [debug] [Thread-1 (]: On model.full_script_retail.stg_retail__orders: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "full_script_retail", "target_name": "dev", "node_id": "model.full_script_retail.stg_retail__orders"} */
+create or replace   view ANALYTICS.ANALYTICS_CORE.stg_retail__orders
+  
+   as (
+    with sources AS (
+    SELECT
+        *
+    FROM
+        snowflake_sample_data.tpch_sf1.orders
+),
+
+renamed AS (
+    SELECT
+        o_orderkey AS order_id,
+        o_custkey AS customer_id,
+        o_clerk AS clerk_id,
+        o_orderstatus AS order_status,
+        o_totalprice AS total_price,
+        o_orderdate::DATE AS created_at,
+        o_orderpriority AS priority,
+        o_shippriority AS shipping_priority,
+        o_comment AS comments
+    FROM
+        sources
+)
+
+SELECT
+    *
+FROM
+    renamed
+  );
+[0m19:59:36.205871 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m19:59:37.167689 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m19:59:37.188096 [debug] [Thread-1 (]: Timing info for model.full_script_retail.stg_retail__orders (execute): 19:59:36.167870 => 19:59:37.187104
+[0m19:59:37.188096 [debug] [Thread-1 (]: On model.full_script_retail.stg_retail__orders: Close
+[0m19:59:37.380854 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '49af066c-ae2c-411f-9393-89f617907aa7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001934CA34490>]}
+[0m19:59:37.381801 [info ] [Thread-1 (]: 1 of 3 OK created sql view model ANALYTICS_CORE.stg_retail__orders ............. [[32mSUCCESS 1[0m in 1.22s]
+[0m19:59:37.382859 [debug] [Thread-1 (]: Finished running node model.full_script_retail.stg_retail__orders
+[0m19:59:37.384822 [debug] [Thread-3 (]: Began running node model.full_script_retail.int_retail__customer_order_aggregated
+[0m19:59:37.385800 [info ] [Thread-3 (]: 2 of 3 START sql view model ANALYTICS_CORE.int_retail__customer_order_aggregated  [RUN]
+[0m19:59:37.388802 [debug] [Thread-3 (]: Acquiring new snowflake connection 'model.full_script_retail.int_retail__customer_order_aggregated'
+[0m19:59:37.390800 [debug] [Thread-3 (]: Began compiling node model.full_script_retail.int_retail__customer_order_aggregated
+[0m19:59:37.392799 [debug] [Thread-3 (]: Writing injected SQL for node "model.full_script_retail.int_retail__customer_order_aggregated"
+[0m19:59:37.396806 [debug] [Thread-3 (]: Timing info for model.full_script_retail.int_retail__customer_order_aggregated (compile): 19:59:37.390800 => 19:59:37.395802
+[0m19:59:37.397802 [debug] [Thread-3 (]: Began executing node model.full_script_retail.int_retail__customer_order_aggregated
+[0m19:59:37.400837 [debug] [Thread-3 (]: Writing runtime sql for node "model.full_script_retail.int_retail__customer_order_aggregated"
+[0m19:59:37.403801 [debug] [Thread-3 (]: Using snowflake connection "model.full_script_retail.int_retail__customer_order_aggregated"
+[0m19:59:37.404817 [debug] [Thread-3 (]: On model.full_script_retail.int_retail__customer_order_aggregated: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "full_script_retail", "target_name": "dev", "node_id": "model.full_script_retail.int_retail__customer_order_aggregated"} */
+create or replace   view ANALYTICS.ANALYTICS_CORE.int_retail__customer_order_aggregated
+  
+   as (
+    with orders AS (
+    SELECT
+        *
+    FROM
+        ANALYTICS.ANALYTICS_CORE.stg_retail__orders
+)
+
+SELECT 
+    customer_id,
+    MIN(created_at) AS first_order_date,
+    MAX(created_at) AS most_recent_order_date,
+    COUNT(order_id) AS number_of_orders,
+    SUM(total_price) AS lifetime_value,
+    ROUND(AVG(total_price),2) AS average_order_value
+FROM
+    orders
+GROUP BY 
+    1
+  );
+[0m19:59:37.405804 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m19:59:38.382758 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m19:59:38.389817 [debug] [Thread-3 (]: Timing info for model.full_script_retail.int_retail__customer_order_aggregated (execute): 19:59:37.397802 => 19:59:38.388810
+[0m19:59:38.389817 [debug] [Thread-3 (]: On model.full_script_retail.int_retail__customer_order_aggregated: Close
+[0m19:59:38.547699 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '49af066c-ae2c-411f-9393-89f617907aa7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001934E6A2110>]}
+[0m19:59:38.549699 [info ] [Thread-3 (]: 2 of 3 OK created sql view model ANALYTICS_CORE.int_retail__customer_order_aggregated  [[32mSUCCESS 1[0m in 1.16s]
+[0m19:59:38.553698 [debug] [Thread-3 (]: Finished running node model.full_script_retail.int_retail__customer_order_aggregated
+[0m19:59:38.555702 [debug] [Thread-2 (]: Began running node model.full_script_retail.dim_retail__customers
+[0m19:59:38.556704 [info ] [Thread-2 (]: 3 of 3 START sql view model ANALYTICS_CORE.dim_customers ....................... [RUN]
+[0m19:59:38.559733 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.full_script_retail.dim_retail__customers'
+[0m19:59:38.559733 [debug] [Thread-2 (]: Began compiling node model.full_script_retail.dim_retail__customers
+[0m19:59:38.566729 [debug] [Thread-2 (]: Timing info for model.full_script_retail.dim_retail__customers (compile): 19:59:38.560733 => 19:59:38.565731
+[0m19:59:38.570730 [debug] [Thread-2 (]: Compilation Error in model dim_retail__customers (models\marts\dim_retail__customers.sql)
+  'dict object' has no attribute 'utils'. This can happen when calling a macro that does not exist. Check for typos and/or install package dependencies with "dbt deps".
+[0m19:59:38.571730 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '49af066c-ae2c-411f-9393-89f617907aa7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001934E78B390>]}
+[0m19:59:38.572730 [error] [Thread-2 (]: 3 of 3 ERROR creating sql view model ANALYTICS_CORE.dim_customers .............. [[31mERROR[0m in 0.01s]
+[0m19:59:38.574731 [debug] [Thread-2 (]: Finished running node model.full_script_retail.dim_retail__customers
+[0m19:59:38.577730 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:59:38.578788 [debug] [MainThread]: Connection 'list_ANALYTICS' was properly closed.
+[0m19:59:38.578788 [debug] [MainThread]: Connection 'list_ANALYTICS_ANALYTICS_CORE' was properly closed.
+[0m19:59:38.579792 [debug] [MainThread]: Connection 'model.full_script_retail.stg_retail__orders' was properly closed.
+[0m19:59:38.579792 [debug] [MainThread]: Connection 'model.full_script_retail.int_retail__customer_order_aggregated' was properly closed.
+[0m19:59:38.579792 [debug] [MainThread]: Connection 'model.full_script_retail.dim_retail__customers' was properly closed.
+[0m19:59:38.580771 [info ] [MainThread]: 
+[0m19:59:38.581730 [info ] [MainThread]: Finished running 3 view models in 0 hours 0 minutes and 4.83 seconds (4.83s).
+[0m19:59:38.583730 [debug] [MainThread]: Command end result
+[0m19:59:38.637732 [info ] [MainThread]: 
+[0m19:59:38.638772 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m19:59:38.640733 [info ] [MainThread]: 
+[0m19:59:38.641733 [error] [MainThread]: [33mCompilation Error in model dim_retail__customers (models\marts\dim_retail__customers.sql)[0m
+[0m19:59:38.643748 [error] [MainThread]:   'dict object' has no attribute 'utils'. This can happen when calling a macro that does not exist. Check for typos and/or install package dependencies with "dbt deps".
+[0m19:59:38.645823 [info ] [MainThread]: 
+[0m19:59:38.646752 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=1 SKIP=0 TOTAL=3
+[0m19:59:38.649182 [debug] [MainThread]: Command `dbt run` failed at 19:59:38.649182 after 5.38 seconds
+[0m19:59:38.650228 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001934C452650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001934BFC93D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019349DC7C10>]}
+[0m19:59:38.650228 [debug] [MainThread]: Flushing usage events
+[0m20:00:01.704547 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C93E3D0410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C93E6E1490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C93E3F3BD0>]}
+
+
+============================== 20:00:01.709649 | afbe6721-549b-4b60-9210-0974d02ad228 ==============================
+[0m20:00:01.709649 [info ] [MainThread]: Running with dbt=1.5.1
+[0m20:00:01.711548 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'C:\\Users\\Lenovo\\Documents\\data_dbt_models_fullscript\\logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Lenovo\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m20:00:01.734601 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'afbe6721-549b-4b60-9210-0974d02ad228', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C93EB4A690>]}
+[0m20:00:01.735600 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m20:00:01.737547 [debug] [MainThread]: Command `dbt deps` succeeded at 20:00:01.737547 after 0.06 seconds
+[0m20:00:01.738604 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C93E39FC10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C93EB30A50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C93E763D10>]}
+[0m20:00:01.739549 [debug] [MainThread]: Flushing usage events
+[0m20:02:27.859580 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F4BCBD1A10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F4BC871F10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F4BC8F9510>]}
+
+
+============================== 20:02:27.863630 | 105c3672-9830-40a7-9715-b9899e8428f6 ==============================
+[0m20:02:27.863630 [info ] [MainThread]: Running with dbt=1.5.1
+[0m20:02:27.865581 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'C:\\Users\\Lenovo\\Documents\\data_dbt_models_fullscript\\logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Lenovo\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m20:02:28.188744 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '105c3672-9830-40a7-9715-b9899e8428f6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F4BCC30650>]}
+[0m20:02:28.200914 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '105c3672-9830-40a7-9715-b9899e8428f6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F4BD8C3D90>]}
+[0m20:02:28.211217 [debug] [MainThread]: checksum: 51f6b581eba8f8101bc020bf9faf8f96af641e2da86d581f66e2bdf0ff384b1c, vars: {}, profile: , target: , version: 1.5.1
+[0m20:02:28.270306 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m20:02:28.270306 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m20:02:28.271321 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.full_script_retail.example
+[0m20:02:28.280660 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '105c3672-9830-40a7-9715-b9899e8428f6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F4BD9E7DD0>]}
+[0m20:02:28.289697 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '105c3672-9830-40a7-9715-b9899e8428f6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F4BD8EC950>]}
+[0m20:02:28.289697 [info ] [MainThread]: Found 4 models, 12 tests, 0 snapshots, 0 analyses, 321 macros, 0 operations, 0 seed files, 4 sources, 0 exposures, 0 metrics, 0 groups
+[0m20:02:28.291650 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '105c3672-9830-40a7-9715-b9899e8428f6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F4BC8539D0>]}
+[0m20:02:28.293690 [info ] [MainThread]: 
+[0m20:02:28.296643 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m20:02:28.297817 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ANALYTICS'
+[0m20:02:28.313817 [debug] [ThreadPool]: Using snowflake connection "list_ANALYTICS"
+[0m20:02:28.313817 [debug] [ThreadPool]: On list_ANALYTICS: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "full_script_retail", "target_name": "dev", "connection_name": "list_ANALYTICS"} */
+show terse schemas in database ANALYTICS
+    limit 10000
+[0m20:02:28.314817 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:02:29.353796 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1.0 seconds
+[0m20:02:29.357840 [debug] [ThreadPool]: On list_ANALYTICS: Close
+[0m20:02:29.482716 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ANALYTICS_ANALYTICS_CORE'
+[0m20:02:29.490714 [debug] [ThreadPool]: Using snowflake connection "list_ANALYTICS_ANALYTICS_CORE"
+[0m20:02:29.491714 [debug] [ThreadPool]: On list_ANALYTICS_ANALYTICS_CORE: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "full_script_retail", "target_name": "dev", "connection_name": "list_ANALYTICS_ANALYTICS_CORE"} */
+show terse objects in ANALYTICS.ANALYTICS_CORE
+[0m20:02:29.491714 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:02:30.216222 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 1.0 seconds
+[0m20:02:30.221212 [debug] [ThreadPool]: On list_ANALYTICS_ANALYTICS_CORE: Close
+[0m20:02:30.399173 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '105c3672-9830-40a7-9715-b9899e8428f6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F4BDDCE510>]}
+[0m20:02:30.401173 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m20:02:30.402259 [info ] [MainThread]: 
+[0m20:02:30.414424 [debug] [Thread-1 (]: Began running node model.full_script_retail.stg_retail__orders
+[0m20:02:30.415442 [info ] [Thread-1 (]: 1 of 1 START sql view model ANALYTICS_CORE.stg_retail__orders .................. [RUN]
+[0m20:02:30.417491 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.full_script_retail.stg_retail__orders'
+[0m20:02:30.417491 [debug] [Thread-1 (]: Began compiling node model.full_script_retail.stg_retail__orders
+[0m20:02:30.420495 [debug] [Thread-1 (]: Writing injected SQL for node "model.full_script_retail.stg_retail__orders"
+[0m20:02:30.422434 [debug] [Thread-1 (]: Timing info for model.full_script_retail.stg_retail__orders (compile): 20:02:30.418431 => 20:02:30.421470
+[0m20:02:30.422434 [debug] [Thread-1 (]: Began executing node model.full_script_retail.stg_retail__orders
+[0m20:02:30.453678 [debug] [Thread-1 (]: Writing runtime sql for node "model.full_script_retail.stg_retail__orders"
+[0m20:02:30.455632 [debug] [Thread-1 (]: Using snowflake connection "model.full_script_retail.stg_retail__orders"
+[0m20:02:30.456681 [debug] [Thread-1 (]: On model.full_script_retail.stg_retail__orders: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "full_script_retail", "target_name": "dev", "node_id": "model.full_script_retail.stg_retail__orders"} */
+create or replace   view ANALYTICS.ANALYTICS_CORE.stg_retail__orders
+  
+   as (
+    with sources AS (
+    SELECT
+        *
+    FROM
+        snowflake_sample_data.tpch_sf1.orders
+),
+
+renamed AS (
+    SELECT
+        o_orderkey AS order_id,
+        o_custkey AS customer_id,
+        o_clerk AS clerk_id,
+        o_orderstatus AS order_status,
+        o_totalprice AS total_price,
+        o_orderdate::DATE AS created_at,
+        o_orderpriority AS priority,
+        o_shippriority AS shipping_priority,
+        o_comment AS comments
+    FROM
+        sources
+)
+
+SELECT
+    *
+FROM
+    renamed
+  );
+[0m20:02:30.456681 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m20:02:31.278827 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m20:02:31.301281 [debug] [Thread-1 (]: Timing info for model.full_script_retail.stg_retail__orders (execute): 20:02:30.423469 => 20:02:31.301281
+[0m20:02:31.302275 [debug] [Thread-1 (]: On model.full_script_retail.stg_retail__orders: Close
+[0m20:02:31.586538 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '105c3672-9830-40a7-9715-b9899e8428f6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F4BDDD5A10>]}
+[0m20:02:31.588464 [info ] [Thread-1 (]: 1 of 1 OK created sql view model ANALYTICS_CORE.stg_retail__orders ............. [[32mSUCCESS 1[0m in 1.17s]
+[0m20:02:31.590766 [debug] [Thread-1 (]: Finished running node model.full_script_retail.stg_retail__orders
+[0m20:02:31.593762 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m20:02:31.594762 [debug] [MainThread]: Connection 'list_ANALYTICS' was properly closed.
+[0m20:02:31.594762 [debug] [MainThread]: Connection 'list_ANALYTICS_ANALYTICS_CORE' was properly closed.
+[0m20:02:31.595764 [debug] [MainThread]: Connection 'model.full_script_retail.stg_retail__orders' was properly closed.
+[0m20:02:31.595764 [info ] [MainThread]: 
+[0m20:02:31.597057 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 3.30 seconds (3.30s).
+[0m20:02:31.599414 [debug] [MainThread]: Command end result
+[0m20:02:31.607696 [info ] [MainThread]: 
+[0m20:02:31.609699 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m20:02:31.611698 [info ] [MainThread]: 
+[0m20:02:31.613697 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m20:02:31.615759 [debug] [MainThread]: Command `dbt run` succeeded at 20:02:31.614699 after 3.78 seconds
+[0m20:02:31.615759 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F4BCFBB110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F4BC590C90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F4BC82C250>]}
+[0m20:02:31.616745 [debug] [MainThread]: Flushing usage events
+[0m20:02:40.263821 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024824DCA210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024824E86390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024824AD1390>]}
+
+
+============================== 20:02:40.268862 | d165a003-71f8-4ba5-a673-cdfedaa41942 ==============================
+[0m20:02:40.268862 [info ] [MainThread]: Running with dbt=1.5.1
+[0m20:02:40.270822 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Users\\Lenovo\\Documents\\data_dbt_models_fullscript\\logs', 'profiles_dir': 'C:\\Users\\Lenovo\\.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m20:02:40.554089 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd165a003-71f8-4ba5-a673-cdfedaa41942', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002482494B150>]}
+[0m20:02:40.565171 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd165a003-71f8-4ba5-a673-cdfedaa41942', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024825AE4AD0>]}
+[0m20:02:40.576544 [debug] [MainThread]: checksum: 51f6b581eba8f8101bc020bf9faf8f96af641e2da86d581f66e2bdf0ff384b1c, vars: {}, profile: , target: , version: 1.5.1
+[0m20:02:40.627387 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m20:02:40.627387 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m20:02:40.628437 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.full_script_retail.example
+[0m20:02:40.637757 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd165a003-71f8-4ba5-a673-cdfedaa41942', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024825C1D890>]}
+[0m20:02:40.647789 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd165a003-71f8-4ba5-a673-cdfedaa41942', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024825CBA790>]}
+[0m20:02:40.648722 [info ] [MainThread]: Found 4 models, 12 tests, 0 snapshots, 0 analyses, 321 macros, 0 operations, 0 seed files, 4 sources, 0 exposures, 0 metrics, 0 groups
+[0m20:02:40.649721 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd165a003-71f8-4ba5-a673-cdfedaa41942', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024825CBBE90>]}
+[0m20:02:40.651769 [info ] [MainThread]: 
+[0m20:02:40.653723 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m20:02:40.654832 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ANALYTICS_ANALYTICS_CORE'
+[0m20:02:40.670835 [debug] [ThreadPool]: Using snowflake connection "list_ANALYTICS_ANALYTICS_CORE"
+[0m20:02:40.670835 [debug] [ThreadPool]: On list_ANALYTICS_ANALYTICS_CORE: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "full_script_retail", "target_name": "dev", "connection_name": "list_ANALYTICS_ANALYTICS_CORE"} */
+show terse objects in ANALYTICS.ANALYTICS_CORE
+[0m20:02:40.671835 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:02:41.568327 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 1.0 seconds
+[0m20:02:41.571305 [debug] [ThreadPool]: On list_ANALYTICS_ANALYTICS_CORE: Close
+[0m20:02:41.965738 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd165a003-71f8-4ba5-a673-cdfedaa41942', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024825C1F950>]}
+[0m20:02:41.967782 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m20:02:41.968779 [info ] [MainThread]: 
+[0m20:02:41.982651 [debug] [Thread-1 (]: Began running node test.full_script_retail.not_null_stg_retail__orders_clerk_id.6fcf0c69e9
+[0m20:02:41.982651 [debug] [Thread-2 (]: Began running node test.full_script_retail.not_null_stg_retail__orders_customer_id.858d3627ef
+[0m20:02:41.983611 [debug] [Thread-3 (]: Began running node test.full_script_retail.not_null_stg_retail__orders_order_id.25fe591433
+[0m20:02:41.984062 [debug] [Thread-4 (]: Began running node test.full_script_retail.unique_stg_retail__orders_order_id.23bf108dff
+[0m20:02:41.984062 [info ] [Thread-1 (]: 1 of 4 START test not_null_stg_retail__orders_clerk_id ......................... [RUN]
+[0m20:02:41.985156 [info ] [Thread-2 (]: 2 of 4 START test not_null_stg_retail__orders_customer_id ...................... [RUN]
+[0m20:02:41.986320 [info ] [Thread-3 (]: 3 of 4 START test not_null_stg_retail__orders_order_id ......................... [RUN]
+[0m20:02:41.988325 [debug] [Thread-1 (]: Acquiring new snowflake connection 'test.full_script_retail.not_null_stg_retail__orders_clerk_id.6fcf0c69e9'
+[0m20:02:41.987325 [info ] [Thread-4 (]: 4 of 4 START test unique_stg_retail__orders_order_id ........................... [RUN]
+[0m20:02:41.989326 [debug] [Thread-2 (]: Acquiring new snowflake connection 'test.full_script_retail.not_null_stg_retail__orders_customer_id.858d3627ef'
+[0m20:02:41.991326 [debug] [Thread-3 (]: Acquiring new snowflake connection 'test.full_script_retail.not_null_stg_retail__orders_order_id.25fe591433'
+[0m20:02:41.991326 [debug] [Thread-1 (]: Began compiling node test.full_script_retail.not_null_stg_retail__orders_clerk_id.6fcf0c69e9
+[0m20:02:41.993369 [debug] [Thread-4 (]: Acquiring new snowflake connection 'test.full_script_retail.unique_stg_retail__orders_order_id.23bf108dff'
+[0m20:02:41.994325 [debug] [Thread-2 (]: Began compiling node test.full_script_retail.not_null_stg_retail__orders_customer_id.858d3627ef
+[0m20:02:41.995325 [debug] [Thread-3 (]: Began compiling node test.full_script_retail.not_null_stg_retail__orders_order_id.25fe591433
+[0m20:02:42.007024 [debug] [Thread-1 (]: Writing injected SQL for node "test.full_script_retail.not_null_stg_retail__orders_clerk_id.6fcf0c69e9"
+[0m20:02:42.008070 [debug] [Thread-4 (]: Began compiling node test.full_script_retail.unique_stg_retail__orders_order_id.23bf108dff
+[0m20:02:42.014069 [debug] [Thread-2 (]: Writing injected SQL for node "test.full_script_retail.not_null_stg_retail__orders_customer_id.858d3627ef"
+[0m20:02:42.019071 [debug] [Thread-3 (]: Writing injected SQL for node "test.full_script_retail.not_null_stg_retail__orders_order_id.25fe591433"
+[0m20:02:42.028085 [debug] [Thread-4 (]: Writing injected SQL for node "test.full_script_retail.unique_stg_retail__orders_order_id.23bf108dff"
+[0m20:02:42.029661 [debug] [Thread-1 (]: Timing info for test.full_script_retail.not_null_stg_retail__orders_clerk_id.6fcf0c69e9 (compile): 20:02:41.996012 => 20:02:42.029661
+[0m20:02:42.031733 [debug] [Thread-2 (]: Timing info for test.full_script_retail.not_null_stg_retail__orders_customer_id.858d3627ef (compile): 20:02:42.009026 => 20:02:42.030667
+[0m20:02:42.032661 [debug] [Thread-1 (]: Began executing node test.full_script_retail.not_null_stg_retail__orders_clerk_id.6fcf0c69e9
+[0m20:02:42.033724 [debug] [Thread-3 (]: Timing info for test.full_script_retail.not_null_stg_retail__orders_order_id.25fe591433 (compile): 20:02:42.014069 => 20:02:42.033724
+[0m20:02:42.034719 [debug] [Thread-2 (]: Began executing node test.full_script_retail.not_null_stg_retail__orders_customer_id.858d3627ef
+[0m20:02:42.035663 [debug] [Thread-4 (]: Timing info for test.full_script_retail.unique_stg_retail__orders_order_id.23bf108dff (compile): 20:02:42.019071 => 20:02:42.035663
+[0m20:02:42.055702 [debug] [Thread-1 (]: Writing runtime sql for node "test.full_script_retail.not_null_stg_retail__orders_clerk_id.6fcf0c69e9"
+[0m20:02:42.056706 [debug] [Thread-3 (]: Began executing node test.full_script_retail.not_null_stg_retail__orders_order_id.25fe591433
+[0m20:02:42.059660 [debug] [Thread-2 (]: Writing runtime sql for node "test.full_script_retail.not_null_stg_retail__orders_customer_id.858d3627ef"
+[0m20:02:42.060293 [debug] [Thread-4 (]: Began executing node test.full_script_retail.unique_stg_retail__orders_order_id.23bf108dff
+[0m20:02:42.063877 [debug] [Thread-3 (]: Writing runtime sql for node "test.full_script_retail.not_null_stg_retail__orders_order_id.25fe591433"
+[0m20:02:42.067880 [debug] [Thread-4 (]: Writing runtime sql for node "test.full_script_retail.unique_stg_retail__orders_order_id.23bf108dff"
+[0m20:02:42.069864 [debug] [Thread-1 (]: Using snowflake connection "test.full_script_retail.not_null_stg_retail__orders_clerk_id.6fcf0c69e9"
+[0m20:02:42.070805 [debug] [Thread-2 (]: Using snowflake connection "test.full_script_retail.not_null_stg_retail__orders_customer_id.858d3627ef"
+[0m20:02:42.071802 [debug] [Thread-1 (]: On test.full_script_retail.not_null_stg_retail__orders_clerk_id.6fcf0c69e9: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "full_script_retail", "target_name": "dev", "node_id": "test.full_script_retail.not_null_stg_retail__orders_clerk_id.6fcf0c69e9"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select clerk_id
+from ANALYTICS.ANALYTICS_CORE.stg_retail__orders
+where clerk_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m20:02:42.073824 [debug] [Thread-3 (]: Using snowflake connection "test.full_script_retail.not_null_stg_retail__orders_order_id.25fe591433"
+[0m20:02:42.076863 [debug] [Thread-4 (]: Using snowflake connection "test.full_script_retail.unique_stg_retail__orders_order_id.23bf108dff"
+[0m20:02:42.077873 [debug] [Thread-2 (]: On test.full_script_retail.not_null_stg_retail__orders_customer_id.858d3627ef: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "full_script_retail", "target_name": "dev", "node_id": "test.full_script_retail.not_null_stg_retail__orders_customer_id.858d3627ef"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select customer_id
+from ANALYTICS.ANALYTICS_CORE.stg_retail__orders
+where customer_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m20:02:42.078806 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m20:02:42.078806 [debug] [Thread-3 (]: On test.full_script_retail.not_null_stg_retail__orders_order_id.25fe591433: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "full_script_retail", "target_name": "dev", "node_id": "test.full_script_retail.not_null_stg_retail__orders_order_id.25fe591433"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select order_id
+from ANALYTICS.ANALYTICS_CORE.stg_retail__orders
+where order_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m20:02:42.079880 [debug] [Thread-4 (]: On test.full_script_retail.unique_stg_retail__orders_order_id.23bf108dff: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "full_script_retail", "target_name": "dev", "node_id": "test.full_script_retail.unique_stg_retail__orders_order_id.23bf108dff"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    order_id as unique_field,
+    count(*) as n_records
+
+from ANALYTICS.ANALYTICS_CORE.stg_retail__orders
+where order_id is not null
+group by order_id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m20:02:42.080891 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m20:02:42.083438 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m20:02:42.084401 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m20:02:43.682266 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 2.0 seconds
+[0m20:02:43.707120 [debug] [Thread-2 (]: Timing info for test.full_script_retail.not_null_stg_retail__orders_customer_id.858d3627ef (execute): 20:02:42.056706 => 20:02:43.706113
+[0m20:02:43.708181 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 2.0 seconds
+[0m20:02:43.709119 [debug] [Thread-2 (]: On test.full_script_retail.not_null_stg_retail__orders_customer_id.858d3627ef: Close
+[0m20:02:43.711449 [debug] [Thread-1 (]: Timing info for test.full_script_retail.not_null_stg_retail__orders_clerk_id.6fcf0c69e9 (execute): 20:02:42.036723 => 20:02:43.710449
+[0m20:02:43.714449 [debug] [Thread-1 (]: On test.full_script_retail.not_null_stg_retail__orders_clerk_id.6fcf0c69e9: Close
+[0m20:02:43.842211 [info ] [Thread-1 (]: 1 of 4 PASS not_null_stg_retail__orders_clerk_id ............................... [[32mPASS[0m in 1.85s]
+[0m20:02:43.846133 [debug] [Thread-1 (]: Finished running node test.full_script_retail.not_null_stg_retail__orders_clerk_id.6fcf0c69e9
+[0m20:02:43.844196 [info ] [Thread-2 (]: 2 of 4 PASS not_null_stg_retail__orders_customer_id ............................ [[32mPASS[0m in 1.85s]
+[0m20:02:43.848136 [debug] [Thread-2 (]: Finished running node test.full_script_retail.not_null_stg_retail__orders_customer_id.858d3627ef
+[0m20:02:43.854183 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 2.0 seconds
+[0m20:02:43.858245 [debug] [Thread-3 (]: Timing info for test.full_script_retail.not_null_stg_retail__orders_order_id.25fe591433 (execute): 20:02:42.060798 => 20:02:43.857249
+[0m20:02:43.859200 [debug] [Thread-3 (]: On test.full_script_retail.not_null_stg_retail__orders_order_id.25fe591433: Close
+[0m20:02:43.977602 [info ] [Thread-3 (]: 3 of 4 PASS not_null_stg_retail__orders_order_id ............................... [[32mPASS[0m in 1.99s]
+[0m20:02:43.980605 [debug] [Thread-3 (]: Finished running node test.full_script_retail.not_null_stg_retail__orders_order_id.25fe591433
+[0m20:02:44.142373 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 2.0 seconds
+[0m20:02:44.148368 [debug] [Thread-4 (]: Timing info for test.full_script_retail.unique_stg_retail__orders_order_id.23bf108dff (execute): 20:02:42.064803 => 20:02:44.147368
+[0m20:02:44.149366 [debug] [Thread-4 (]: On test.full_script_retail.unique_stg_retail__orders_order_id.23bf108dff: Close
+[0m20:02:44.282030 [info ] [Thread-4 (]: 4 of 4 PASS unique_stg_retail__orders_order_id ................................. [[32mPASS[0m in 2.29s]
+[0m20:02:44.283955 [debug] [Thread-4 (]: Finished running node test.full_script_retail.unique_stg_retail__orders_order_id.23bf108dff
+[0m20:02:44.286975 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m20:02:44.287951 [debug] [MainThread]: Connection 'list_ANALYTICS_ANALYTICS_CORE' was properly closed.
+[0m20:02:44.288956 [debug] [MainThread]: Connection 'test.full_script_retail.not_null_stg_retail__orders_clerk_id.6fcf0c69e9' was properly closed.
+[0m20:02:44.289959 [debug] [MainThread]: Connection 'test.full_script_retail.not_null_stg_retail__orders_customer_id.858d3627ef' was properly closed.
+[0m20:02:44.290949 [debug] [MainThread]: Connection 'test.full_script_retail.not_null_stg_retail__orders_order_id.25fe591433' was properly closed.
+[0m20:02:44.290949 [debug] [MainThread]: Connection 'test.full_script_retail.unique_stg_retail__orders_order_id.23bf108dff' was properly closed.
+[0m20:02:44.291952 [info ] [MainThread]: 
+[0m20:02:44.293951 [info ] [MainThread]: Finished running 4 tests in 0 hours 0 minutes and 3.64 seconds (3.64s).
+[0m20:02:44.295953 [debug] [MainThread]: Command end result
+[0m20:02:44.303952 [info ] [MainThread]: 
+[0m20:02:44.305951 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m20:02:44.306950 [info ] [MainThread]: 
+[0m20:02:44.308954 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=0 SKIP=0 TOTAL=4
+[0m20:02:44.310951 [debug] [MainThread]: Command `dbt test` succeeded at 20:02:44.309952 after 4.07 seconds
+[0m20:02:44.311965 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000248251FB350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024824E86010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002481EB36B50>]}
+[0m20:02:44.311965 [debug] [MainThread]: Flushing usage events
+[0m20:02:58.210003 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002688E082350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002688DF28310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002688DBE5150>]}
+
+
+============================== 20:02:58.214045 | 3a3e0c12-676b-49d1-affe-51b85a079c44 ==============================
+[0m20:02:58.214045 [info ] [MainThread]: Running with dbt=1.5.1
+[0m20:02:58.216005 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Lenovo\\.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\Users\\Lenovo\\Documents\\data_dbt_models_fullscript\\logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m20:02:58.497192 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3a3e0c12-676b-49d1-affe-51b85a079c44', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002688DBE5610>]}
+[0m20:02:58.509340 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '3a3e0c12-676b-49d1-affe-51b85a079c44', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002688E96F790>]}
+[0m20:02:58.520438 [debug] [MainThread]: checksum: 51f6b581eba8f8101bc020bf9faf8f96af641e2da86d581f66e2bdf0ff384b1c, vars: {}, profile: , target: , version: 1.5.1
+[0m20:02:58.570429 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m20:02:58.571433 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m20:02:58.572381 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.full_script_retail.example
+[0m20:02:58.581087 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3a3e0c12-676b-49d1-affe-51b85a079c44', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002688D950D10>]}
+[0m20:02:58.590415 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3a3e0c12-676b-49d1-affe-51b85a079c44', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002688E9C3210>]}
+[0m20:02:58.591399 [info ] [MainThread]: Found 4 models, 12 tests, 0 snapshots, 0 analyses, 321 macros, 0 operations, 0 seed files, 4 sources, 0 exposures, 0 metrics, 0 groups
+[0m20:02:58.592399 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3a3e0c12-676b-49d1-affe-51b85a079c44', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002688E9C3E90>]}
+[0m20:02:58.594442 [info ] [MainThread]: 
+[0m20:02:58.596463 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m20:02:58.599660 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ANALYTICS_ANALYTICS_CORE'
+[0m20:02:58.615699 [debug] [ThreadPool]: Using snowflake connection "list_ANALYTICS_ANALYTICS_CORE"
+[0m20:02:58.615699 [debug] [ThreadPool]: On list_ANALYTICS_ANALYTICS_CORE: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "full_script_retail", "target_name": "dev", "connection_name": "list_ANALYTICS_ANALYTICS_CORE"} */
+show terse objects in ANALYTICS.ANALYTICS_CORE
+[0m20:02:58.616656 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:02:59.587466 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 1.0 seconds
+[0m20:02:59.592466 [debug] [ThreadPool]: On list_ANALYTICS_ANALYTICS_CORE: Close
+[0m20:02:59.733942 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3a3e0c12-676b-49d1-affe-51b85a079c44', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002688EDBD890>]}
+[0m20:02:59.735997 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m20:02:59.737031 [info ] [MainThread]: 
+[0m20:02:59.749281 [debug] [Thread-1 (]: Began running node test.full_script_retail.not_null_dim_retail__customers_customer_id.a67a3d1ffe
+[0m20:02:59.750341 [debug] [Thread-2 (]: Began running node test.full_script_retail.not_null_dim_retail__customers_nation_id.04899c4c27
+[0m20:02:59.750341 [debug] [Thread-3 (]: Began running node test.full_script_retail.not_null_stg_retail__customers_customer_id.16e00b211f
+[0m20:02:59.751284 [debug] [Thread-4 (]: Began running node test.full_script_retail.not_null_stg_retail__customers_nation_id.55dc9e7cce
+[0m20:02:59.751284 [info ] [Thread-1 (]: 1 of 6 START test not_null_dim_retail__customers_customer_id ................... [RUN]
+[0m20:02:59.752285 [info ] [Thread-2 (]: 2 of 6 START test not_null_dim_retail__customers_nation_id ..................... [RUN]
+[0m20:02:59.753311 [info ] [Thread-3 (]: 3 of 6 START test not_null_stg_retail__customers_customer_id ................... [RUN]
+[0m20:02:59.755349 [info ] [Thread-4 (]: 4 of 6 START test not_null_stg_retail__customers_nation_id ..................... [RUN]
+[0m20:02:59.756355 [debug] [Thread-1 (]: Acquiring new snowflake connection 'test.full_script_retail.not_null_dim_retail__customers_customer_id.a67a3d1ffe'
+[0m20:02:59.757350 [debug] [Thread-2 (]: Acquiring new snowflake connection 'test.full_script_retail.not_null_dim_retail__customers_nation_id.04899c4c27'
+[0m20:02:59.759351 [debug] [Thread-3 (]: Acquiring new snowflake connection 'test.full_script_retail.not_null_stg_retail__customers_customer_id.16e00b211f'
+[0m20:02:59.760351 [debug] [Thread-4 (]: Acquiring new snowflake connection 'test.full_script_retail.not_null_stg_retail__customers_nation_id.55dc9e7cce'
+[0m20:02:59.761350 [debug] [Thread-1 (]: Began compiling node test.full_script_retail.not_null_dim_retail__customers_customer_id.a67a3d1ffe
+[0m20:02:59.762388 [debug] [Thread-2 (]: Began compiling node test.full_script_retail.not_null_dim_retail__customers_nation_id.04899c4c27
+[0m20:02:59.763416 [debug] [Thread-3 (]: Began compiling node test.full_script_retail.not_null_stg_retail__customers_customer_id.16e00b211f
+[0m20:02:59.764432 [debug] [Thread-4 (]: Began compiling node test.full_script_retail.not_null_stg_retail__customers_nation_id.55dc9e7cce
+[0m20:02:59.777891 [debug] [Thread-1 (]: Writing injected SQL for node "test.full_script_retail.not_null_dim_retail__customers_customer_id.a67a3d1ffe"
+[0m20:02:59.781935 [debug] [Thread-2 (]: Writing injected SQL for node "test.full_script_retail.not_null_dim_retail__customers_nation_id.04899c4c27"
+[0m20:02:59.786890 [debug] [Thread-3 (]: Writing injected SQL for node "test.full_script_retail.not_null_stg_retail__customers_customer_id.16e00b211f"
+[0m20:02:59.790625 [debug] [Thread-4 (]: Writing injected SQL for node "test.full_script_retail.not_null_stg_retail__customers_nation_id.55dc9e7cce"
+[0m20:02:59.794036 [debug] [Thread-2 (]: Timing info for test.full_script_retail.not_null_dim_retail__customers_nation_id.04899c4c27 (compile): 20:02:59.778925 => 20:02:59.792997
+[0m20:02:59.796362 [debug] [Thread-1 (]: Timing info for test.full_script_retail.not_null_dim_retail__customers_customer_id.a67a3d1ffe (compile): 20:02:59.764877 => 20:02:59.795016
+[0m20:02:59.797372 [debug] [Thread-3 (]: Timing info for test.full_script_retail.not_null_stg_retail__customers_customer_id.16e00b211f (compile): 20:02:59.782934 => 20:02:59.796362
+[0m20:02:59.798382 [debug] [Thread-2 (]: Began executing node test.full_script_retail.not_null_dim_retail__customers_nation_id.04899c4c27
+[0m20:02:59.798382 [debug] [Thread-4 (]: Timing info for test.full_script_retail.not_null_stg_retail__customers_nation_id.55dc9e7cce (compile): 20:02:59.787621 => 20:02:59.798382
+[0m20:02:59.799422 [debug] [Thread-1 (]: Began executing node test.full_script_retail.not_null_dim_retail__customers_customer_id.a67a3d1ffe
+[0m20:02:59.800370 [debug] [Thread-3 (]: Began executing node test.full_script_retail.not_null_stg_retail__customers_customer_id.16e00b211f
+[0m20:02:59.821421 [debug] [Thread-2 (]: Writing runtime sql for node "test.full_script_retail.not_null_dim_retail__customers_nation_id.04899c4c27"
+[0m20:02:59.822454 [debug] [Thread-4 (]: Began executing node test.full_script_retail.not_null_stg_retail__customers_nation_id.55dc9e7cce
+[0m20:02:59.824414 [debug] [Thread-1 (]: Writing runtime sql for node "test.full_script_retail.not_null_dim_retail__customers_customer_id.a67a3d1ffe"
+[0m20:02:59.827417 [debug] [Thread-3 (]: Writing runtime sql for node "test.full_script_retail.not_null_stg_retail__customers_customer_id.16e00b211f"
+[0m20:02:59.831419 [debug] [Thread-4 (]: Writing runtime sql for node "test.full_script_retail.not_null_stg_retail__customers_nation_id.55dc9e7cce"
+[0m20:02:59.834377 [debug] [Thread-1 (]: Using snowflake connection "test.full_script_retail.not_null_dim_retail__customers_customer_id.a67a3d1ffe"
+[0m20:02:59.835373 [debug] [Thread-1 (]: On test.full_script_retail.not_null_dim_retail__customers_customer_id.a67a3d1ffe: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "full_script_retail", "target_name": "dev", "node_id": "test.full_script_retail.not_null_dim_retail__customers_customer_id.a67a3d1ffe"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select customer_id
+from ANALYTICS.ANALYTICS_CORE.dim_customers
+where customer_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m20:02:59.837377 [debug] [Thread-2 (]: Using snowflake connection "test.full_script_retail.not_null_dim_retail__customers_nation_id.04899c4c27"
+[0m20:02:59.838377 [debug] [Thread-4 (]: Using snowflake connection "test.full_script_retail.not_null_stg_retail__customers_nation_id.55dc9e7cce"
+[0m20:02:59.838377 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m20:02:59.840374 [debug] [Thread-3 (]: Using snowflake connection "test.full_script_retail.not_null_stg_retail__customers_customer_id.16e00b211f"
+[0m20:02:59.842375 [debug] [Thread-2 (]: On test.full_script_retail.not_null_dim_retail__customers_nation_id.04899c4c27: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "full_script_retail", "target_name": "dev", "node_id": "test.full_script_retail.not_null_dim_retail__customers_nation_id.04899c4c27"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select nation_id
+from ANALYTICS.ANALYTICS_CORE.dim_customers
+where nation_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m20:02:59.843436 [debug] [Thread-4 (]: On test.full_script_retail.not_null_stg_retail__customers_nation_id.55dc9e7cce: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "full_script_retail", "target_name": "dev", "node_id": "test.full_script_retail.not_null_stg_retail__customers_nation_id.55dc9e7cce"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select nation_id
+from ANALYTICS.ANALYTICS_CORE.stg_retail__customers
+where nation_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m20:02:59.847594 [debug] [Thread-3 (]: On test.full_script_retail.not_null_stg_retail__customers_customer_id.16e00b211f: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "full_script_retail", "target_name": "dev", "node_id": "test.full_script_retail.not_null_stg_retail__customers_customer_id.16e00b211f"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select customer_id
+from ANALYTICS.ANALYTICS_CORE.stg_retail__customers
+where customer_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m20:02:59.847594 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m20:02:59.848654 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m20:02:59.849667 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m20:03:00.764201 [debug] [Thread-2 (]: Snowflake adapter: Snowflake query id: 01aceda3-0001-2569-0004-1622000130ea
+[0m20:03:00.765203 [debug] [Thread-2 (]: Snowflake adapter: Snowflake error: 002003 (42S02): SQL compilation error:
+Object 'ANALYTICS.ANALYTICS_CORE.DIM_CUSTOMERS' does not exist or not authorized.
+[0m20:03:00.765203 [debug] [Thread-2 (]: Timing info for test.full_script_retail.not_null_dim_retail__customers_nation_id.04899c4c27 (execute): 20:02:59.801431 => 20:03:00.765203
+[0m20:03:00.766201 [debug] [Thread-2 (]: On test.full_script_retail.not_null_dim_retail__customers_nation_id.04899c4c27: Close
+[0m20:03:00.838252 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01aceda3-0001-23d3-0004-162200016082
+[0m20:03:00.839187 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 002003 (42S02): SQL compilation error:
+Object 'ANALYTICS.ANALYTICS_CORE.DIM_CUSTOMERS' does not exist or not authorized.
+[0m20:03:00.841216 [debug] [Thread-1 (]: Timing info for test.full_script_retail.not_null_dim_retail__customers_customer_id.a67a3d1ffe (execute): 20:02:59.822454 => 20:03:00.840221
+[0m20:03:00.841216 [debug] [Thread-1 (]: On test.full_script_retail.not_null_dim_retail__customers_customer_id.a67a3d1ffe: Close
+[0m20:03:00.892729 [debug] [Thread-2 (]: Database Error in test not_null_dim_retail__customers_nation_id (models\marts\dim_retail__customers.yml)
+  002003 (42S02): SQL compilation error:
+  Object 'ANALYTICS.ANALYTICS_CORE.DIM_CUSTOMERS' does not exist or not authorized.
+  compiled Code at target\run\full_script_retail\models\marts\dim_retail__customers.yml\not_null_dim_retail__customers_nation_id.sql
+[0m20:03:00.893748 [error] [Thread-2 (]: 2 of 6 ERROR not_null_dim_retail__customers_nation_id .......................... [[31mERROR[0m in 1.14s]
+[0m20:03:00.895695 [debug] [Thread-2 (]: Finished running node test.full_script_retail.not_null_dim_retail__customers_nation_id.04899c4c27
+[0m20:03:00.897688 [debug] [Thread-2 (]: Began running node test.full_script_retail.unique_dim_retail__customers_customer_id.186538bb9e
+[0m20:03:00.897688 [info ] [Thread-2 (]: 5 of 6 START test unique_dim_retail__customers_customer_id ..................... [RUN]
+[0m20:03:00.900685 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.full_script_retail.not_null_dim_retail__customers_nation_id.04899c4c27, now test.full_script_retail.unique_dim_retail__customers_customer_id.186538bb9e)
+[0m20:03:00.901683 [debug] [Thread-2 (]: Began compiling node test.full_script_retail.unique_dim_retail__customers_customer_id.186538bb9e
+[0m20:03:00.909683 [debug] [Thread-2 (]: Writing injected SQL for node "test.full_script_retail.unique_dim_retail__customers_customer_id.186538bb9e"
+[0m20:03:00.911691 [debug] [Thread-2 (]: Timing info for test.full_script_retail.unique_dim_retail__customers_customer_id.186538bb9e (compile): 20:03:00.901683 => 20:03:00.910684
+[0m20:03:00.913684 [debug] [Thread-2 (]: Began executing node test.full_script_retail.unique_dim_retail__customers_customer_id.186538bb9e
+[0m20:03:00.916682 [debug] [Thread-2 (]: Writing runtime sql for node "test.full_script_retail.unique_dim_retail__customers_customer_id.186538bb9e"
+[0m20:03:00.918682 [debug] [Thread-2 (]: Using snowflake connection "test.full_script_retail.unique_dim_retail__customers_customer_id.186538bb9e"
+[0m20:03:00.919684 [debug] [Thread-2 (]: On test.full_script_retail.unique_dim_retail__customers_customer_id.186538bb9e: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "full_script_retail", "target_name": "dev", "node_id": "test.full_script_retail.unique_dim_retail__customers_customer_id.186538bb9e"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    customer_id as unique_field,
+    count(*) as n_records
+
+from ANALYTICS.ANALYTICS_CORE.dim_customers
+where customer_id is not null
+group by customer_id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m20:03:00.919684 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m20:03:00.973285 [debug] [Thread-1 (]: Database Error in test not_null_dim_retail__customers_customer_id (models\marts\dim_retail__customers.yml)
+  002003 (42S02): SQL compilation error:
+  Object 'ANALYTICS.ANALYTICS_CORE.DIM_CUSTOMERS' does not exist or not authorized.
+  compiled Code at target\run\full_script_retail\models\marts\dim_retail__customers.yml\not_null_dim_retail__customers_customer_id.sql
+[0m20:03:00.974284 [error] [Thread-1 (]: 1 of 6 ERROR not_null_dim_retail__customers_customer_id ........................ [[31mERROR[0m in 1.22s]
+[0m20:03:00.976286 [debug] [Thread-1 (]: Finished running node test.full_script_retail.not_null_dim_retail__customers_customer_id.a67a3d1ffe
+[0m20:03:00.976286 [debug] [Thread-1 (]: Began running node test.full_script_retail.unique_stg_retail__customers_customer_id.592e12e11b
+[0m20:03:00.977285 [info ] [Thread-1 (]: 6 of 6 START test unique_stg_retail__customers_customer_id ..................... [RUN]
+[0m20:03:00.979286 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.full_script_retail.not_null_dim_retail__customers_customer_id.a67a3d1ffe, now test.full_script_retail.unique_stg_retail__customers_customer_id.592e12e11b)
+[0m20:03:00.980350 [debug] [Thread-1 (]: Began compiling node test.full_script_retail.unique_stg_retail__customers_customer_id.592e12e11b
+[0m20:03:00.984349 [debug] [Thread-1 (]: Writing injected SQL for node "test.full_script_retail.unique_stg_retail__customers_customer_id.592e12e11b"
+[0m20:03:00.986285 [debug] [Thread-1 (]: Timing info for test.full_script_retail.unique_stg_retail__customers_customer_id.592e12e11b (compile): 20:03:00.980350 => 20:03:00.985359
+[0m20:03:00.986285 [debug] [Thread-1 (]: Began executing node test.full_script_retail.unique_stg_retail__customers_customer_id.592e12e11b
+[0m20:03:00.990288 [debug] [Thread-1 (]: Writing runtime sql for node "test.full_script_retail.unique_stg_retail__customers_customer_id.592e12e11b"
+[0m20:03:00.991286 [debug] [Thread-1 (]: Using snowflake connection "test.full_script_retail.unique_stg_retail__customers_customer_id.592e12e11b"
+[0m20:03:00.993288 [debug] [Thread-1 (]: On test.full_script_retail.unique_stg_retail__customers_customer_id.592e12e11b: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "full_script_retail", "target_name": "dev", "node_id": "test.full_script_retail.unique_stg_retail__customers_customer_id.592e12e11b"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    customer_id as unique_field,
+    count(*) as n_records
+
+from ANALYTICS.ANALYTICS_CORE.stg_retail__customers
+where customer_id is not null
+group by customer_id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m20:03:00.994347 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:03:01.070420 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m20:03:01.077468 [debug] [Thread-3 (]: Timing info for test.full_script_retail.not_null_stg_retail__customers_customer_id.16e00b211f (execute): 20:02:59.825440 => 20:03:01.077468
+[0m20:03:01.078421 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m20:03:01.079421 [debug] [Thread-3 (]: On test.full_script_retail.not_null_stg_retail__customers_customer_id.16e00b211f: Close
+[0m20:03:01.081421 [debug] [Thread-4 (]: Timing info for test.full_script_retail.not_null_stg_retail__customers_nation_id.55dc9e7cce (execute): 20:02:59.828422 => 20:03:01.081421
+[0m20:03:01.084420 [debug] [Thread-4 (]: On test.full_script_retail.not_null_stg_retail__customers_nation_id.55dc9e7cce: Close
+[0m20:03:01.219309 [info ] [Thread-3 (]: 3 of 6 PASS not_null_stg_retail__customers_customer_id ......................... [[32mPASS[0m in 1.46s]
+[0m20:03:01.221314 [debug] [Thread-3 (]: Finished running node test.full_script_retail.not_null_stg_retail__customers_customer_id.16e00b211f
+[0m20:03:01.245582 [info ] [Thread-4 (]: 4 of 6 PASS not_null_stg_retail__customers_nation_id ........................... [[32mPASS[0m in 1.49s]
+[0m20:03:01.247535 [debug] [Thread-4 (]: Finished running node test.full_script_retail.not_null_stg_retail__customers_nation_id.55dc9e7cce
+[0m20:03:01.718965 [debug] [Thread-2 (]: Snowflake adapter: Snowflake query id: 01aceda3-0001-2569-0004-1622000130ee
+[0m20:03:01.720975 [debug] [Thread-2 (]: Snowflake adapter: Snowflake error: 002003 (42S02): SQL compilation error:
+Object 'ANALYTICS.ANALYTICS_CORE.DIM_CUSTOMERS' does not exist or not authorized.
+[0m20:03:01.721920 [debug] [Thread-2 (]: Timing info for test.full_script_retail.unique_dim_retail__customers_customer_id.186538bb9e (execute): 20:03:00.914685 => 20:03:01.721920
+[0m20:03:01.722960 [debug] [Thread-2 (]: On test.full_script_retail.unique_dim_retail__customers_customer_id.186538bb9e: Close
+[0m20:03:01.890894 [debug] [Thread-2 (]: Database Error in test unique_dim_retail__customers_customer_id (models\marts\dim_retail__customers.yml)
+  002003 (42S02): SQL compilation error:
+  Object 'ANALYTICS.ANALYTICS_CORE.DIM_CUSTOMERS' does not exist or not authorized.
+  compiled Code at target\run\full_script_retail\models\marts\dim_retail__customers.yml\unique_dim_retail__customers_customer_id.sql
+[0m20:03:01.891890 [error] [Thread-2 (]: 5 of 6 ERROR unique_dim_retail__customers_customer_id .......................... [[31mERROR[0m in 0.99s]
+[0m20:03:01.892945 [debug] [Thread-2 (]: Finished running node test.full_script_retail.unique_dim_retail__customers_customer_id.186538bb9e
+[0m20:03:02.201043 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m20:03:02.205091 [debug] [Thread-1 (]: Timing info for test.full_script_retail.unique_stg_retail__customers_customer_id.592e12e11b (execute): 20:03:00.987285 => 20:03:02.205091
+[0m20:03:02.205091 [debug] [Thread-1 (]: On test.full_script_retail.unique_stg_retail__customers_customer_id.592e12e11b: Close
+[0m20:03:02.477116 [info ] [Thread-1 (]: 6 of 6 PASS unique_stg_retail__customers_customer_id ........................... [[32mPASS[0m in 1.50s]
+[0m20:03:02.481076 [debug] [Thread-1 (]: Finished running node test.full_script_retail.unique_stg_retail__customers_customer_id.592e12e11b
+[0m20:03:02.486076 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m20:03:02.487073 [debug] [MainThread]: Connection 'list_ANALYTICS_ANALYTICS_CORE' was properly closed.
+[0m20:03:02.488071 [debug] [MainThread]: Connection 'test.full_script_retail.unique_stg_retail__customers_customer_id.592e12e11b' was properly closed.
+[0m20:03:02.488071 [debug] [MainThread]: Connection 'test.full_script_retail.unique_dim_retail__customers_customer_id.186538bb9e' was properly closed.
+[0m20:03:02.489114 [debug] [MainThread]: Connection 'test.full_script_retail.not_null_stg_retail__customers_customer_id.16e00b211f' was properly closed.
+[0m20:03:02.490069 [debug] [MainThread]: Connection 'test.full_script_retail.not_null_stg_retail__customers_nation_id.55dc9e7cce' was properly closed.
+[0m20:03:02.490069 [info ] [MainThread]: 
+[0m20:03:02.492068 [info ] [MainThread]: Finished running 6 tests in 0 hours 0 minutes and 3.89 seconds (3.89s).
+[0m20:03:02.495078 [debug] [MainThread]: Command end result
+[0m20:03:02.547072 [info ] [MainThread]: 
+[0m20:03:02.548468 [info ] [MainThread]: [31mCompleted with 3 errors and 0 warnings:[0m
+[0m20:03:02.550473 [info ] [MainThread]: 
+[0m20:03:02.552488 [error] [MainThread]: [33mDatabase Error in test not_null_dim_retail__customers_nation_id (models\marts\dim_retail__customers.yml)[0m
+[0m20:03:02.554474 [error] [MainThread]:   002003 (42S02): SQL compilation error:
+[0m20:03:02.555465 [error] [MainThread]:   Object 'ANALYTICS.ANALYTICS_CORE.DIM_CUSTOMERS' does not exist or not authorized.
+[0m20:03:02.556815 [error] [MainThread]:   compiled Code at target\run\full_script_retail\models\marts\dim_retail__customers.yml\not_null_dim_retail__customers_nation_id.sql
+[0m20:03:02.558821 [info ] [MainThread]: 
+[0m20:03:02.559822 [error] [MainThread]: [33mDatabase Error in test not_null_dim_retail__customers_customer_id (models\marts\dim_retail__customers.yml)[0m
+[0m20:03:02.561889 [error] [MainThread]:   002003 (42S02): SQL compilation error:
+[0m20:03:02.562890 [error] [MainThread]:   Object 'ANALYTICS.ANALYTICS_CORE.DIM_CUSTOMERS' does not exist or not authorized.
+[0m20:03:02.564890 [error] [MainThread]:   compiled Code at target\run\full_script_retail\models\marts\dim_retail__customers.yml\not_null_dim_retail__customers_customer_id.sql
+[0m20:03:02.566598 [info ] [MainThread]: 
+[0m20:03:02.567597 [error] [MainThread]: [33mDatabase Error in test unique_dim_retail__customers_customer_id (models\marts\dim_retail__customers.yml)[0m
+[0m20:03:02.568637 [error] [MainThread]:   002003 (42S02): SQL compilation error:
+[0m20:03:02.569720 [error] [MainThread]:   Object 'ANALYTICS.ANALYTICS_CORE.DIM_CUSTOMERS' does not exist or not authorized.
+[0m20:03:02.570607 [error] [MainThread]:   compiled Code at target\run\full_script_retail\models\marts\dim_retail__customers.yml\unique_dim_retail__customers_customer_id.sql
+[0m20:03:02.571604 [info ] [MainThread]: 
+[0m20:03:02.572626 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=3 SKIP=0 TOTAL=6
+[0m20:03:02.573631 [debug] [MainThread]: Command `dbt test` failed at 20:03:02.573631 after 4.39 seconds
+[0m20:03:02.574647 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002688D864F10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002688E05EF10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002688E05DD10>]}
+[0m20:03:02.574647 [debug] [MainThread]: Flushing usage events
+[0m20:07:50.158773 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A8102499D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A8101B15D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A8104C7310>]}
+
+
+============================== 20:07:50.164816 | 98ada57e-30e5-4721-8a3d-1097f693bac8 ==============================
+[0m20:07:50.164816 [info ] [MainThread]: Running with dbt=1.5.1
+[0m20:07:50.165809 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\Lenovo\\Documents\\data_dbt_models_fullscript\\logs', 'profiles_dir': 'C:\\Users\\Lenovo\\.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m20:07:50.458050 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '98ada57e-30e5-4721-8a3d-1097f693bac8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A81092BD90>]}
+[0m20:07:50.469039 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '98ada57e-30e5-4721-8a3d-1097f693bac8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A81091F5D0>]}
+[0m20:07:50.481045 [debug] [MainThread]: checksum: 51f6b581eba8f8101bc020bf9faf8f96af641e2da86d581f66e2bdf0ff384b1c, vars: {}, profile: , target: , version: 1.5.1
+[0m20:07:50.530004 [debug] [MainThread]: Partial parsing enabled: 2 files deleted, 0 files added, 0 files changed.
+[0m20:07:50.530004 [debug] [MainThread]: Partial parsing: deleted file: full_script_retail://models\marts\dim_retail__customers.sql
+[0m20:07:50.538294 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.full_script_retail.example
+[0m20:07:50.551295 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '98ada57e-30e5-4721-8a3d-1097f693bac8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A810946090>]}
+[0m20:07:50.561303 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '98ada57e-30e5-4721-8a3d-1097f693bac8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A81121D010>]}
+[0m20:07:50.562296 [info ] [MainThread]: Found 3 models, 9 tests, 0 snapshots, 0 analyses, 321 macros, 0 operations, 0 seed files, 4 sources, 0 exposures, 0 metrics, 0 groups
+[0m20:07:50.564294 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '98ada57e-30e5-4721-8a3d-1097f693bac8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A811374190>]}
+[0m20:07:50.566681 [info ] [MainThread]: 
+[0m20:07:50.569174 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m20:07:50.573650 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ANALYTICS_ANALYTICS_CORE'
+[0m20:07:50.588582 [debug] [ThreadPool]: Using snowflake connection "list_ANALYTICS_ANALYTICS_CORE"
+[0m20:07:50.589579 [debug] [ThreadPool]: On list_ANALYTICS_ANALYTICS_CORE: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "full_script_retail", "target_name": "dev", "connection_name": "list_ANALYTICS_ANALYTICS_CORE"} */
+show terse objects in ANALYTICS.ANALYTICS_CORE
+[0m20:07:50.590582 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:07:51.693903 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 1.0 seconds
+[0m20:07:51.695961 [debug] [ThreadPool]: On list_ANALYTICS_ANALYTICS_CORE: Close
+[0m20:07:51.825008 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '98ada57e-30e5-4721-8a3d-1097f693bac8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A8112C5890>]}
+[0m20:07:51.826007 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m20:07:51.827007 [info ] [MainThread]: 
+[0m20:07:51.837008 [debug] [Thread-1 (]: Began running node test.full_script_retail.not_null_stg_retail__customers_customer_id.16e00b211f
+[0m20:07:51.838011 [debug] [Thread-2 (]: Began running node test.full_script_retail.not_null_stg_retail__customers_nation_id.55dc9e7cce
+[0m20:07:51.839007 [debug] [Thread-3 (]: Began running node test.full_script_retail.unique_stg_retail__customers_customer_id.592e12e11b
+[0m20:07:51.839007 [info ] [Thread-1 (]: 1 of 3 START test not_null_stg_retail__customers_customer_id ................... [RUN]
+[0m20:07:51.840016 [info ] [Thread-2 (]: 2 of 3 START test not_null_stg_retail__customers_nation_id ..................... [RUN]
+[0m20:07:51.843008 [debug] [Thread-1 (]: Acquiring new snowflake connection 'test.full_script_retail.not_null_stg_retail__customers_customer_id.16e00b211f'
+[0m20:07:51.841008 [info ] [Thread-3 (]: 3 of 3 START test unique_stg_retail__customers_customer_id ..................... [RUN]
+[0m20:07:51.844009 [debug] [Thread-2 (]: Acquiring new snowflake connection 'test.full_script_retail.not_null_stg_retail__customers_nation_id.55dc9e7cce'
+[0m20:07:51.845008 [debug] [Thread-1 (]: Began compiling node test.full_script_retail.not_null_stg_retail__customers_customer_id.16e00b211f
+[0m20:07:51.845008 [debug] [Thread-3 (]: Acquiring new snowflake connection 'test.full_script_retail.unique_stg_retail__customers_customer_id.592e12e11b'
+[0m20:07:51.846016 [debug] [Thread-2 (]: Began compiling node test.full_script_retail.not_null_stg_retail__customers_nation_id.55dc9e7cce
+[0m20:07:51.863473 [debug] [Thread-1 (]: Writing injected SQL for node "test.full_script_retail.not_null_stg_retail__customers_customer_id.16e00b211f"
+[0m20:07:51.864479 [debug] [Thread-3 (]: Began compiling node test.full_script_retail.unique_stg_retail__customers_customer_id.592e12e11b
+[0m20:07:51.870476 [debug] [Thread-2 (]: Writing injected SQL for node "test.full_script_retail.not_null_stg_retail__customers_nation_id.55dc9e7cce"
+[0m20:07:51.878472 [debug] [Thread-3 (]: Writing injected SQL for node "test.full_script_retail.unique_stg_retail__customers_customer_id.592e12e11b"
+[0m20:07:51.879472 [debug] [Thread-1 (]: Timing info for test.full_script_retail.not_null_stg_retail__customers_customer_id.16e00b211f (compile): 20:07:51.847008 => 20:07:51.878472
+[0m20:07:51.880472 [debug] [Thread-2 (]: Timing info for test.full_script_retail.not_null_stg_retail__customers_nation_id.55dc9e7cce (compile): 20:07:51.864479 => 20:07:51.880472
+[0m20:07:51.881473 [debug] [Thread-1 (]: Began executing node test.full_script_retail.not_null_stg_retail__customers_customer_id.16e00b211f
+[0m20:07:51.882473 [debug] [Thread-2 (]: Began executing node test.full_script_retail.not_null_stg_retail__customers_nation_id.55dc9e7cce
+[0m20:07:51.883472 [debug] [Thread-3 (]: Timing info for test.full_script_retail.unique_stg_retail__customers_customer_id.592e12e11b (compile): 20:07:51.871479 => 20:07:51.882473
+[0m20:07:51.903474 [debug] [Thread-1 (]: Writing runtime sql for node "test.full_script_retail.not_null_stg_retail__customers_customer_id.16e00b211f"
+[0m20:07:51.906477 [debug] [Thread-2 (]: Writing runtime sql for node "test.full_script_retail.not_null_stg_retail__customers_nation_id.55dc9e7cce"
+[0m20:07:51.906477 [debug] [Thread-3 (]: Began executing node test.full_script_retail.unique_stg_retail__customers_customer_id.592e12e11b
+[0m20:07:51.912483 [debug] [Thread-3 (]: Writing runtime sql for node "test.full_script_retail.unique_stg_retail__customers_customer_id.592e12e11b"
+[0m20:07:51.913486 [debug] [Thread-1 (]: Using snowflake connection "test.full_script_retail.not_null_stg_retail__customers_customer_id.16e00b211f"
+[0m20:07:51.914475 [debug] [Thread-2 (]: Using snowflake connection "test.full_script_retail.not_null_stg_retail__customers_nation_id.55dc9e7cce"
+[0m20:07:51.915485 [debug] [Thread-1 (]: On test.full_script_retail.not_null_stg_retail__customers_customer_id.16e00b211f: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "full_script_retail", "target_name": "dev", "node_id": "test.full_script_retail.not_null_stg_retail__customers_customer_id.16e00b211f"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select customer_id
+from ANALYTICS.ANALYTICS_CORE.stg_retail__customers
+where customer_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m20:07:51.916478 [debug] [Thread-2 (]: On test.full_script_retail.not_null_stg_retail__customers_nation_id.55dc9e7cce: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "full_script_retail", "target_name": "dev", "node_id": "test.full_script_retail.not_null_stg_retail__customers_nation_id.55dc9e7cce"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select nation_id
+from ANALYTICS.ANALYTICS_CORE.stg_retail__customers
+where nation_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m20:07:51.917506 [debug] [Thread-3 (]: Using snowflake connection "test.full_script_retail.unique_stg_retail__customers_customer_id.592e12e11b"
+[0m20:07:51.918474 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m20:07:51.919476 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m20:07:51.919476 [debug] [Thread-3 (]: On test.full_script_retail.unique_stg_retail__customers_customer_id.592e12e11b: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "full_script_retail", "target_name": "dev", "node_id": "test.full_script_retail.unique_stg_retail__customers_customer_id.592e12e11b"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    customer_id as unique_field,
+    count(*) as n_records
+
+from ANALYTICS.ANALYTICS_CORE.stg_retail__customers
+where customer_id is not null
+group by customer_id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m20:07:51.923474 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m20:07:52.837814 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m20:07:52.849791 [debug] [Thread-3 (]: Timing info for test.full_script_retail.unique_stg_retail__customers_customer_id.592e12e11b (execute): 20:07:51.908472 => 20:07:52.848805
+[0m20:07:52.849791 [debug] [Thread-3 (]: On test.full_script_retail.unique_stg_retail__customers_customer_id.592e12e11b: Close
+[0m20:07:52.869667 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m20:07:52.872663 [debug] [Thread-1 (]: Timing info for test.full_script_retail.not_null_stg_retail__customers_customer_id.16e00b211f (execute): 20:07:51.884474 => 20:07:52.872663
+[0m20:07:52.873698 [debug] [Thread-1 (]: On test.full_script_retail.not_null_stg_retail__customers_customer_id.16e00b211f: Close
+[0m20:07:52.967901 [info ] [Thread-3 (]: 3 of 3 PASS unique_stg_retail__customers_customer_id ........................... [[32mPASS[0m in 1.12s]
+[0m20:07:52.968900 [debug] [Thread-3 (]: Finished running node test.full_script_retail.unique_stg_retail__customers_customer_id.592e12e11b
+[0m20:07:52.990587 [info ] [Thread-1 (]: 1 of 3 PASS not_null_stg_retail__customers_customer_id ......................... [[32mPASS[0m in 1.15s]
+[0m20:07:52.992937 [debug] [Thread-1 (]: Finished running node test.full_script_retail.not_null_stg_retail__customers_customer_id.16e00b211f
+[0m20:07:53.020050 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m20:07:53.023053 [debug] [Thread-2 (]: Timing info for test.full_script_retail.not_null_stg_retail__customers_nation_id.55dc9e7cce (execute): 20:07:51.904473 => 20:07:53.023053
+[0m20:07:53.024116 [debug] [Thread-2 (]: On test.full_script_retail.not_null_stg_retail__customers_nation_id.55dc9e7cce: Close
+[0m20:07:53.137125 [info ] [Thread-2 (]: 2 of 3 PASS not_null_stg_retail__customers_nation_id ........................... [[32mPASS[0m in 1.29s]
+[0m20:07:53.141129 [debug] [Thread-2 (]: Finished running node test.full_script_retail.not_null_stg_retail__customers_nation_id.55dc9e7cce
+[0m20:07:53.145166 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m20:07:53.146123 [debug] [MainThread]: Connection 'list_ANALYTICS_ANALYTICS_CORE' was properly closed.
+[0m20:07:53.146123 [debug] [MainThread]: Connection 'test.full_script_retail.not_null_stg_retail__customers_customer_id.16e00b211f' was properly closed.
+[0m20:07:53.147127 [debug] [MainThread]: Connection 'test.full_script_retail.not_null_stg_retail__customers_nation_id.55dc9e7cce' was properly closed.
+[0m20:07:53.148171 [debug] [MainThread]: Connection 'test.full_script_retail.unique_stg_retail__customers_customer_id.592e12e11b' was properly closed.
+[0m20:07:53.148171 [info ] [MainThread]: 
+[0m20:07:53.150125 [info ] [MainThread]: Finished running 3 tests in 0 hours 0 minutes and 2.58 seconds (2.58s).
+[0m20:07:53.153153 [debug] [MainThread]: Command end result
+[0m20:07:53.163548 [info ] [MainThread]: 
+[0m20:07:53.164521 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m20:07:53.167004 [info ] [MainThread]: 
+[0m20:07:53.167995 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+[0m20:07:53.169996 [debug] [MainThread]: Command `dbt test` succeeded at 20:07:53.169996 after 3.03 seconds
+[0m20:07:53.170997 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A80A246B50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A809FCA8D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A80A00A850>]}
+[0m20:07:53.172022 [debug] [MainThread]: Flushing usage events
+[0m20:08:02.200216 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024B2CDD4AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024B2CDB8BD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024B2CDE0A90>]}
+
+
+============================== 20:08:02.205216 | ded64dc7-6e33-4adb-868c-8ed59a1f81ec ==============================
+[0m20:08:02.205216 [info ] [MainThread]: Running with dbt=1.5.1
+[0m20:08:02.207218 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Lenovo\\.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'C:\\Users\\Lenovo\\Documents\\data_dbt_models_fullscript\\logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m20:08:02.499648 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ded64dc7-6e33-4adb-868c-8ed59a1f81ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024B2CDD5F50>]}
+[0m20:08:02.510659 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ded64dc7-6e33-4adb-868c-8ed59a1f81ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024B2DB2BA50>]}
+[0m20:08:02.522656 [debug] [MainThread]: checksum: 51f6b581eba8f8101bc020bf9faf8f96af641e2da86d581f66e2bdf0ff384b1c, vars: {}, profile: , target: , version: 1.5.1
+[0m20:08:02.589693 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m20:08:02.590694 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m20:08:02.591690 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.full_script_retail.example
+[0m20:08:02.600388 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'ded64dc7-6e33-4adb-868c-8ed59a1f81ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024B2DC65390>]}
+[0m20:08:02.610393 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'ded64dc7-6e33-4adb-868c-8ed59a1f81ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024B2DB4E4D0>]}
+[0m20:08:02.611389 [info ] [MainThread]: Found 3 models, 9 tests, 0 snapshots, 0 analyses, 321 macros, 0 operations, 0 seed files, 4 sources, 0 exposures, 0 metrics, 0 groups
+[0m20:08:02.612388 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ded64dc7-6e33-4adb-868c-8ed59a1f81ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024B2DCCFF90>]}
+[0m20:08:02.614391 [info ] [MainThread]: 
+[0m20:08:02.616004 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m20:08:02.618023 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ANALYTICS'
+[0m20:08:02.633072 [debug] [ThreadPool]: Using snowflake connection "list_ANALYTICS"
+[0m20:08:02.634006 [debug] [ThreadPool]: On list_ANALYTICS: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "full_script_retail", "target_name": "dev", "connection_name": "list_ANALYTICS"} */
+show terse schemas in database ANALYTICS
+    limit 10000
+[0m20:08:02.635005 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:08:03.721058 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1.0 seconds
+[0m20:08:03.723061 [debug] [ThreadPool]: On list_ANALYTICS: Close
+[0m20:08:03.846677 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ANALYTICS_ANALYTICS_CORE'
+[0m20:08:03.855678 [debug] [ThreadPool]: Using snowflake connection "list_ANALYTICS_ANALYTICS_CORE"
+[0m20:08:03.856678 [debug] [ThreadPool]: On list_ANALYTICS_ANALYTICS_CORE: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "full_script_retail", "target_name": "dev", "connection_name": "list_ANALYTICS_ANALYTICS_CORE"} */
+show terse objects in ANALYTICS.ANALYTICS_CORE
+[0m20:08:03.857675 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:08:04.575948 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 1.0 seconds
+[0m20:08:04.580946 [debug] [ThreadPool]: On list_ANALYTICS_ANALYTICS_CORE: Close
+[0m20:08:04.705436 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ded64dc7-6e33-4adb-868c-8ed59a1f81ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024B2DCE2250>]}
+[0m20:08:04.707361 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m20:08:04.709363 [info ] [MainThread]: 
+[0m20:08:04.719620 [debug] [Thread-1 (]: Began running node model.full_script_retail.stg_retail__customers
+[0m20:08:04.721629 [info ] [Thread-1 (]: 1 of 1 START sql view model ANALYTICS_CORE.stg_retail__customers ............... [RUN]
+[0m20:08:04.723621 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.full_script_retail.stg_retail__customers'
+[0m20:08:04.724624 [debug] [Thread-1 (]: Began compiling node model.full_script_retail.stg_retail__customers
+[0m20:08:04.727619 [debug] [Thread-1 (]: Writing injected SQL for node "model.full_script_retail.stg_retail__customers"
+[0m20:08:04.728635 [debug] [Thread-1 (]: Timing info for model.full_script_retail.stg_retail__customers (compile): 20:08:04.724624 => 20:08:04.728635
+[0m20:08:04.729622 [debug] [Thread-1 (]: Began executing node model.full_script_retail.stg_retail__customers
+[0m20:08:04.766620 [debug] [Thread-1 (]: Writing runtime sql for node "model.full_script_retail.stg_retail__customers"
+[0m20:08:04.770621 [debug] [Thread-1 (]: Using snowflake connection "model.full_script_retail.stg_retail__customers"
+[0m20:08:04.771623 [debug] [Thread-1 (]: On model.full_script_retail.stg_retail__customers: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "full_script_retail", "target_name": "dev", "node_id": "model.full_script_retail.stg_retail__customers"} */
+create or replace   view ANALYTICS.ANALYTICS_CORE.stg_retail__customers
+  
+   as (
+    with sources AS (
+    SELECT
+        *
+    FROM
+        snowflake_sample_data.tpch_sf1.customer
+),
+
+renamed AS (
+    SELECT
+        c_custkey AS customer_id,
+        c_nationkey AS nation_id,
+        MD5(c_name) AS customer_name,
+        c_address AS customer_address,
+        MD5(c_phone) AS phone_number,
+        c_acctbal AS account_balance,
+        c_mktsegment AS marketing_segment,
+        c_comment AS comments
+    FROM
+        sources
+)
+
+SELECT
+    *
+FROM
+    renamed
+  );
+[0m20:08:04.772866 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m20:08:05.866768 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m20:08:05.892760 [debug] [Thread-1 (]: Timing info for model.full_script_retail.stg_retail__customers (execute): 20:08:04.729622 => 20:08:05.892760
+[0m20:08:05.893726 [debug] [Thread-1 (]: On model.full_script_retail.stg_retail__customers: Close
+[0m20:08:06.019844 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ded64dc7-6e33-4adb-868c-8ed59a1f81ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024B2CAF23D0>]}
+[0m20:08:06.020800 [info ] [Thread-1 (]: 1 of 1 OK created sql view model ANALYTICS_CORE.stg_retail__customers .......... [[32mSUCCESS 1[0m in 1.30s]
+[0m20:08:06.022782 [debug] [Thread-1 (]: Finished running node model.full_script_retail.stg_retail__customers
+[0m20:08:06.026819 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m20:08:06.027779 [debug] [MainThread]: Connection 'list_ANALYTICS' was properly closed.
+[0m20:08:06.027779 [debug] [MainThread]: Connection 'list_ANALYTICS_ANALYTICS_CORE' was properly closed.
+[0m20:08:06.028836 [debug] [MainThread]: Connection 'model.full_script_retail.stg_retail__customers' was properly closed.
+[0m20:08:06.029824 [info ] [MainThread]: 
+[0m20:08:06.030780 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 3.41 seconds (3.41s).
+[0m20:08:06.032779 [debug] [MainThread]: Command end result
+[0m20:08:06.042809 [info ] [MainThread]: 
+[0m20:08:06.043781 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m20:08:06.044754 [info ] [MainThread]: 
+[0m20:08:06.045818 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m20:08:06.048101 [debug] [MainThread]: Command `dbt run` succeeded at 20:08:06.047056 after 3.87 seconds
+[0m20:08:06.048101 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024B2CDD4550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024B2CEC31D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024B26B80250>]}
+[0m20:08:06.049076 [debug] [MainThread]: Flushing usage events
+[0m20:08:19.620233 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE630C9F10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE6565E810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE64F02090>]}
+
+
+============================== 20:08:19.625232 | 0f5f82af-2d72-4c85-856f-96b544a3096c ==============================
+[0m20:08:19.625232 [info ] [MainThread]: Running with dbt=1.5.1
+[0m20:08:19.627241 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\Users\\Lenovo\\Documents\\data_dbt_models_fullscript\\logs', 'profiles_dir': 'C:\\Users\\Lenovo\\.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m20:08:19.909442 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0f5f82af-2d72-4c85-856f-96b544a3096c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE651F5B10>]}
+[0m20:08:19.921433 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0f5f82af-2d72-4c85-856f-96b544a3096c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE65F43B50>]}
+[0m20:08:19.932434 [debug] [MainThread]: checksum: 51f6b581eba8f8101bc020bf9faf8f96af641e2da86d581f66e2bdf0ff384b1c, vars: {}, profile: , target: , version: 1.5.1
+[0m20:08:19.981404 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m20:08:19.982403 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m20:08:19.983396 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.full_script_retail.example
+[0m20:08:19.991927 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0f5f82af-2d72-4c85-856f-96b544a3096c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE64F031D0>]}
+[0m20:08:19.999917 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0f5f82af-2d72-4c85-856f-96b544a3096c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE65F7F950>]}
+[0m20:08:20.000908 [info ] [MainThread]: Found 3 models, 9 tests, 0 snapshots, 0 analyses, 321 macros, 0 operations, 0 seed files, 4 sources, 0 exposures, 0 metrics, 0 groups
+[0m20:08:20.002914 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0f5f82af-2d72-4c85-856f-96b544a3096c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE660EFF10>]}
+[0m20:08:20.005953 [info ] [MainThread]: 
+[0m20:08:20.008296 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m20:08:20.009822 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ANALYTICS'
+[0m20:08:20.026282 [debug] [ThreadPool]: Using snowflake connection "list_ANALYTICS"
+[0m20:08:20.026282 [debug] [ThreadPool]: On list_ANALYTICS: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "full_script_retail", "target_name": "dev", "connection_name": "list_ANALYTICS"} */
+show terse schemas in database ANALYTICS
+    limit 10000
+[0m20:08:20.027283 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:08:20.906404 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1.0 seconds
+[0m20:08:20.910321 [debug] [ThreadPool]: On list_ANALYTICS: Close
+[0m20:08:21.028489 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ANALYTICS_ANALYTICS_CORE'
+[0m20:08:21.039492 [debug] [ThreadPool]: Using snowflake connection "list_ANALYTICS_ANALYTICS_CORE"
+[0m20:08:21.040493 [debug] [ThreadPool]: On list_ANALYTICS_ANALYTICS_CORE: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "full_script_retail", "target_name": "dev", "connection_name": "list_ANALYTICS_ANALYTICS_CORE"} */
+show terse objects in ANALYTICS.ANALYTICS_CORE
+[0m20:08:21.040493 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:08:21.676153 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 1.0 seconds
+[0m20:08:21.678151 [debug] [ThreadPool]: On list_ANALYTICS_ANALYTICS_CORE: Close
+[0m20:08:21.830661 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0f5f82af-2d72-4c85-856f-96b544a3096c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE64FBB850>]}
+[0m20:08:21.831663 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m20:08:21.833668 [info ] [MainThread]: 
+[0m20:08:21.844995 [debug] [Thread-1 (]: Began running node model.full_script_retail.stg_retail__orders
+[0m20:08:21.845999 [info ] [Thread-1 (]: 1 of 2 START sql view model ANALYTICS_CORE.stg_retail__orders .................. [RUN]
+[0m20:08:21.847623 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.full_script_retail.stg_retail__orders'
+[0m20:08:21.848673 [debug] [Thread-1 (]: Began compiling node model.full_script_retail.stg_retail__orders
+[0m20:08:21.852771 [debug] [Thread-1 (]: Writing injected SQL for node "model.full_script_retail.stg_retail__orders"
+[0m20:08:21.854624 [debug] [Thread-1 (]: Timing info for model.full_script_retail.stg_retail__orders (compile): 20:08:21.848673 => 20:08:21.854624
+[0m20:08:21.856668 [debug] [Thread-1 (]: Began executing node model.full_script_retail.stg_retail__orders
+[0m20:08:21.888627 [debug] [Thread-1 (]: Writing runtime sql for node "model.full_script_retail.stg_retail__orders"
+[0m20:08:21.890627 [debug] [Thread-1 (]: Using snowflake connection "model.full_script_retail.stg_retail__orders"
+[0m20:08:21.890627 [debug] [Thread-1 (]: On model.full_script_retail.stg_retail__orders: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "full_script_retail", "target_name": "dev", "node_id": "model.full_script_retail.stg_retail__orders"} */
+create or replace   view ANALYTICS.ANALYTICS_CORE.stg_retail__orders
+  
+   as (
+    with sources AS (
+    SELECT
+        *
+    FROM
+        snowflake_sample_data.tpch_sf1.orders
+),
+
+renamed AS (
+    SELECT
+        o_orderkey AS order_id,
+        o_custkey AS customer_id,
+        o_clerk AS clerk_id,
+        o_orderstatus AS order_status,
+        o_totalprice AS total_price,
+        o_orderdate::DATE AS created_at,
+        o_orderpriority AS priority,
+        o_shippriority AS shipping_priority,
+        o_comment AS comments
+    FROM
+        sources
+)
+
+SELECT
+    *
+FROM
+    renamed
+  );
+[0m20:08:21.891655 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m20:08:22.654316 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m20:08:22.679321 [debug] [Thread-1 (]: Timing info for model.full_script_retail.stg_retail__orders (execute): 20:08:21.856668 => 20:08:22.678328
+[0m20:08:22.679321 [debug] [Thread-1 (]: On model.full_script_retail.stg_retail__orders: Close
+[0m20:08:22.807103 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0f5f82af-2d72-4c85-856f-96b544a3096c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE66412790>]}
+[0m20:08:22.809599 [info ] [Thread-1 (]: 1 of 2 OK created sql view model ANALYTICS_CORE.stg_retail__orders ............. [[32mSUCCESS 1[0m in 0.96s]
+[0m20:08:22.811606 [debug] [Thread-1 (]: Finished running node model.full_script_retail.stg_retail__orders
+[0m20:08:22.813608 [debug] [Thread-3 (]: Began running node model.full_script_retail.int_retail__customer_order_aggregated
+[0m20:08:22.814609 [info ] [Thread-3 (]: 2 of 2 START sql view model ANALYTICS_CORE.int_retail__customer_order_aggregated  [RUN]
+[0m20:08:22.817609 [debug] [Thread-3 (]: Acquiring new snowflake connection 'model.full_script_retail.int_retail__customer_order_aggregated'
+[0m20:08:22.818622 [debug] [Thread-3 (]: Began compiling node model.full_script_retail.int_retail__customer_order_aggregated
+[0m20:08:22.821631 [debug] [Thread-3 (]: Writing injected SQL for node "model.full_script_retail.int_retail__customer_order_aggregated"
+[0m20:08:22.823640 [debug] [Thread-3 (]: Timing info for model.full_script_retail.int_retail__customer_order_aggregated (compile): 20:08:22.818622 => 20:08:22.822651
+[0m20:08:22.823640 [debug] [Thread-3 (]: Began executing node model.full_script_retail.int_retail__customer_order_aggregated
+[0m20:08:22.828620 [debug] [Thread-3 (]: Writing runtime sql for node "model.full_script_retail.int_retail__customer_order_aggregated"
+[0m20:08:22.830621 [debug] [Thread-3 (]: Using snowflake connection "model.full_script_retail.int_retail__customer_order_aggregated"
+[0m20:08:22.831626 [debug] [Thread-3 (]: On model.full_script_retail.int_retail__customer_order_aggregated: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "full_script_retail", "target_name": "dev", "node_id": "model.full_script_retail.int_retail__customer_order_aggregated"} */
+create or replace   view ANALYTICS.ANALYTICS_CORE.int_retail__customer_order_aggregated
+  
+   as (
+    with orders AS (
+    SELECT
+        *
+    FROM
+        ANALYTICS.ANALYTICS_CORE.stg_retail__orders
+)
+
+SELECT 
+    customer_id,
+    MIN(created_at) AS first_order_date,
+    MAX(created_at) AS most_recent_order_date,
+    COUNT(order_id) AS number_of_orders,
+    SUM(total_price) AS lifetime_value,
+    ROUND(AVG(total_price),2) AS average_order_value
+FROM
+    orders
+GROUP BY 
+    1
+  );
+[0m20:08:22.832620 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m20:08:23.673833 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m20:08:23.679795 [debug] [Thread-3 (]: Timing info for model.full_script_retail.int_retail__customer_order_aggregated (execute): 20:08:22.825292 => 20:08:23.679795
+[0m20:08:23.679795 [debug] [Thread-3 (]: On model.full_script_retail.int_retail__customer_order_aggregated: Close
+[0m20:08:23.797734 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0f5f82af-2d72-4c85-856f-96b544a3096c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE64F01510>]}
+[0m20:08:23.799734 [info ] [Thread-3 (]: 2 of 2 OK created sql view model ANALYTICS_CORE.int_retail__customer_order_aggregated  [[32mSUCCESS 1[0m in 0.98s]
+[0m20:08:23.802739 [debug] [Thread-3 (]: Finished running node model.full_script_retail.int_retail__customer_order_aggregated
+[0m20:08:23.805774 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m20:08:23.807733 [debug] [MainThread]: Connection 'list_ANALYTICS' was properly closed.
+[0m20:08:23.807733 [debug] [MainThread]: Connection 'list_ANALYTICS_ANALYTICS_CORE' was properly closed.
+[0m20:08:23.808811 [debug] [MainThread]: Connection 'model.full_script_retail.stg_retail__orders' was properly closed.
+[0m20:08:23.808811 [debug] [MainThread]: Connection 'model.full_script_retail.int_retail__customer_order_aggregated' was properly closed.
+[0m20:08:23.809734 [info ] [MainThread]: 
+[0m20:08:23.810320 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 3.80 seconds (3.80s).
+[0m20:08:23.812335 [debug] [MainThread]: Command end result
+[0m20:08:23.820335 [info ] [MainThread]: 
+[0m20:08:23.822327 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m20:08:23.824328 [info ] [MainThread]: 
+[0m20:08:23.826338 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[0m20:08:23.827344 [debug] [MainThread]: Command `dbt run` succeeded at 20:08:23.827344 after 4.23 seconds
+[0m20:08:23.828327 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE65502B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE64E48F90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE5ED290D0>]}
+[0m20:08:23.828327 [debug] [MainThread]: Flushing usage events
+[0m20:08:32.341264 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A3B90AEB90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A3B8C41650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A3B8C6D2D0>]}
+
+
+============================== 20:08:32.345274 | 26b14d8d-5634-455c-b379-ea2cdbc833bf ==============================
+[0m20:08:32.345274 [info ] [MainThread]: Running with dbt=1.5.1
+[0m20:08:32.346286 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Lenovo\\.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'C:\\Users\\Lenovo\\Documents\\data_dbt_models_fullscript\\logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m20:08:32.622843 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '26b14d8d-5634-455c-b379-ea2cdbc833bf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A3B90909D0>]}
+[0m20:08:32.634845 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '26b14d8d-5634-455c-b379-ea2cdbc833bf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A3B86FF310>]}
+[0m20:08:32.645832 [debug] [MainThread]: checksum: 51f6b581eba8f8101bc020bf9faf8f96af641e2da86d581f66e2bdf0ff384b1c, vars: {}, profile: , target: , version: 1.5.1
+[0m20:08:32.695799 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m20:08:32.696800 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m20:08:32.696800 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.full_script_retail.example
+[0m20:08:32.705800 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '26b14d8d-5634-455c-b379-ea2cdbc833bf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A3B8970CD0>]}
+[0m20:08:32.713832 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '26b14d8d-5634-455c-b379-ea2cdbc833bf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A3B99C6850>]}
+[0m20:08:32.714792 [info ] [MainThread]: Found 3 models, 9 tests, 0 snapshots, 0 analyses, 321 macros, 0 operations, 0 seed files, 4 sources, 0 exposures, 0 metrics, 0 groups
+[0m20:08:32.715793 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '26b14d8d-5634-455c-b379-ea2cdbc833bf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A3B92F8090>]}
+[0m20:08:32.718929 [info ] [MainThread]: 
+[0m20:08:32.721926 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m20:08:32.723957 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ANALYTICS_ANALYTICS_CORE'
+[0m20:08:32.739973 [debug] [ThreadPool]: Using snowflake connection "list_ANALYTICS_ANALYTICS_CORE"
+[0m20:08:32.739973 [debug] [ThreadPool]: On list_ANALYTICS_ANALYTICS_CORE: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "full_script_retail", "target_name": "dev", "connection_name": "list_ANALYTICS_ANALYTICS_CORE"} */
+show terse objects in ANALYTICS.ANALYTICS_CORE
+[0m20:08:32.740928 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:08:33.570158 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 1.0 seconds
+[0m20:08:33.572156 [debug] [ThreadPool]: On list_ANALYTICS_ANALYTICS_CORE: Close
+[0m20:08:33.743947 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '26b14d8d-5634-455c-b379-ea2cdbc833bf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A3B9B3EED0>]}
+[0m20:08:33.744946 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m20:08:33.747909 [info ] [MainThread]: 
+[0m20:08:33.759173 [debug] [Thread-1 (]: Began running node test.full_script_retail.not_null_int_retail__customer_order_aggregated_customer_id.cb91ff550e
+[0m20:08:33.760211 [debug] [Thread-2 (]: Began running node test.full_script_retail.not_null_stg_retail__orders_clerk_id.6fcf0c69e9
+[0m20:08:33.760211 [debug] [Thread-3 (]: Began running node test.full_script_retail.not_null_stg_retail__orders_customer_id.858d3627ef
+[0m20:08:33.761231 [debug] [Thread-4 (]: Began running node test.full_script_retail.not_null_stg_retail__orders_order_id.25fe591433
+[0m20:08:33.761231 [info ] [Thread-1 (]: 1 of 6 START test not_null_int_retail__customer_order_aggregated_customer_id ... [RUN]
+[0m20:08:33.762211 [info ] [Thread-2 (]: 2 of 6 START test not_null_stg_retail__orders_clerk_id ......................... [RUN]
+[0m20:08:33.763216 [info ] [Thread-3 (]: 3 of 6 START test not_null_stg_retail__orders_customer_id ...................... [RUN]
+[0m20:08:33.764826 [debug] [Thread-1 (]: Acquiring new snowflake connection 'test.full_script_retail.not_null_int_retail__customer_order_aggregated_customer_id.cb91ff550e'
+[0m20:08:33.764179 [info ] [Thread-4 (]: 4 of 6 START test not_null_stg_retail__orders_order_id ......................... [RUN]
+[0m20:08:33.766845 [debug] [Thread-2 (]: Acquiring new snowflake connection 'test.full_script_retail.not_null_stg_retail__orders_clerk_id.6fcf0c69e9'
+[0m20:08:33.767831 [debug] [Thread-3 (]: Acquiring new snowflake connection 'test.full_script_retail.not_null_stg_retail__orders_customer_id.858d3627ef'
+[0m20:08:33.768836 [debug] [Thread-1 (]: Began compiling node test.full_script_retail.not_null_int_retail__customer_order_aggregated_customer_id.cb91ff550e
+[0m20:08:33.772832 [debug] [Thread-4 (]: Acquiring new snowflake connection 'test.full_script_retail.not_null_stg_retail__orders_order_id.25fe591433'
+[0m20:08:33.773833 [debug] [Thread-2 (]: Began compiling node test.full_script_retail.not_null_stg_retail__orders_clerk_id.6fcf0c69e9
+[0m20:08:33.773833 [debug] [Thread-3 (]: Began compiling node test.full_script_retail.not_null_stg_retail__orders_customer_id.858d3627ef
+[0m20:08:33.788898 [debug] [Thread-1 (]: Writing injected SQL for node "test.full_script_retail.not_null_int_retail__customer_order_aggregated_customer_id.cb91ff550e"
+[0m20:08:33.789834 [debug] [Thread-4 (]: Began compiling node test.full_script_retail.not_null_stg_retail__orders_order_id.25fe591433
+[0m20:08:33.793882 [debug] [Thread-2 (]: Writing injected SQL for node "test.full_script_retail.not_null_stg_retail__orders_clerk_id.6fcf0c69e9"
+[0m20:08:33.797839 [debug] [Thread-3 (]: Writing injected SQL for node "test.full_script_retail.not_null_stg_retail__orders_customer_id.858d3627ef"
+[0m20:08:33.806122 [debug] [Thread-4 (]: Writing injected SQL for node "test.full_script_retail.not_null_stg_retail__orders_order_id.25fe591433"
+[0m20:08:33.808082 [debug] [Thread-1 (]: Timing info for test.full_script_retail.not_null_int_retail__customer_order_aggregated_customer_id.cb91ff550e (compile): 20:08:33.774868 => 20:08:33.807105
+[0m20:08:33.809078 [debug] [Thread-2 (]: Timing info for test.full_script_retail.not_null_stg_retail__orders_clerk_id.6fcf0c69e9 (compile): 20:08:33.790841 => 20:08:33.809078
+[0m20:08:33.810113 [debug] [Thread-1 (]: Began executing node test.full_script_retail.not_null_int_retail__customer_order_aggregated_customer_id.cb91ff550e
+[0m20:08:33.811080 [debug] [Thread-3 (]: Timing info for test.full_script_retail.not_null_stg_retail__orders_customer_id.858d3627ef (compile): 20:08:33.794833 => 20:08:33.811080
+[0m20:08:33.812091 [debug] [Thread-4 (]: Timing info for test.full_script_retail.not_null_stg_retail__orders_order_id.25fe591433 (compile): 20:08:33.798880 => 20:08:33.812091
+[0m20:08:33.813091 [debug] [Thread-2 (]: Began executing node test.full_script_retail.not_null_stg_retail__orders_clerk_id.6fcf0c69e9
+[0m20:08:33.835082 [debug] [Thread-1 (]: Writing runtime sql for node "test.full_script_retail.not_null_int_retail__customer_order_aggregated_customer_id.cb91ff550e"
+[0m20:08:33.836417 [debug] [Thread-3 (]: Began executing node test.full_script_retail.not_null_stg_retail__orders_customer_id.858d3627ef
+[0m20:08:33.836954 [debug] [Thread-4 (]: Began executing node test.full_script_retail.not_null_stg_retail__orders_order_id.25fe591433
+[0m20:08:33.839738 [debug] [Thread-2 (]: Writing runtime sql for node "test.full_script_retail.not_null_stg_retail__orders_clerk_id.6fcf0c69e9"
+[0m20:08:33.843185 [debug] [Thread-3 (]: Writing runtime sql for node "test.full_script_retail.not_null_stg_retail__orders_customer_id.858d3627ef"
+[0m20:08:33.847143 [debug] [Thread-4 (]: Writing runtime sql for node "test.full_script_retail.not_null_stg_retail__orders_order_id.25fe591433"
+[0m20:08:33.849148 [debug] [Thread-1 (]: Using snowflake connection "test.full_script_retail.not_null_int_retail__customer_order_aggregated_customer_id.cb91ff550e"
+[0m20:08:33.851145 [debug] [Thread-2 (]: Using snowflake connection "test.full_script_retail.not_null_stg_retail__orders_clerk_id.6fcf0c69e9"
+[0m20:08:33.853146 [debug] [Thread-1 (]: On test.full_script_retail.not_null_int_retail__customer_order_aggregated_customer_id.cb91ff550e: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "full_script_retail", "target_name": "dev", "node_id": "test.full_script_retail.not_null_int_retail__customer_order_aggregated_customer_id.cb91ff550e"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select customer_id
+from ANALYTICS.ANALYTICS_CORE.int_retail__customer_order_aggregated
+where customer_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m20:08:33.854213 [debug] [Thread-3 (]: Using snowflake connection "test.full_script_retail.not_null_stg_retail__orders_customer_id.858d3627ef"
+[0m20:08:33.855211 [debug] [Thread-2 (]: On test.full_script_retail.not_null_stg_retail__orders_clerk_id.6fcf0c69e9: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "full_script_retail", "target_name": "dev", "node_id": "test.full_script_retail.not_null_stg_retail__orders_clerk_id.6fcf0c69e9"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select clerk_id
+from ANALYTICS.ANALYTICS_CORE.stg_retail__orders
+where clerk_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m20:08:33.856150 [debug] [Thread-4 (]: Using snowflake connection "test.full_script_retail.not_null_stg_retail__orders_order_id.25fe591433"
+[0m20:08:33.857146 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m20:08:33.858185 [debug] [Thread-3 (]: On test.full_script_retail.not_null_stg_retail__orders_customer_id.858d3627ef: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "full_script_retail", "target_name": "dev", "node_id": "test.full_script_retail.not_null_stg_retail__orders_customer_id.858d3627ef"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select customer_id
+from ANALYTICS.ANALYTICS_CORE.stg_retail__orders
+where customer_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m20:08:33.858185 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m20:08:33.859196 [debug] [Thread-4 (]: On test.full_script_retail.not_null_stg_retail__orders_order_id.25fe591433: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "full_script_retail", "target_name": "dev", "node_id": "test.full_script_retail.not_null_stg_retail__orders_order_id.25fe591433"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select order_id
+from ANALYTICS.ANALYTICS_CORE.stg_retail__orders
+where order_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m20:08:33.862147 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m20:08:33.865147 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m20:08:34.795653 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m20:08:34.806662 [debug] [Thread-4 (]: Timing info for test.full_script_retail.not_null_stg_retail__orders_order_id.25fe591433 (execute): 20:08:33.844185 => 20:08:34.806662
+[0m20:08:34.807665 [debug] [Thread-4 (]: On test.full_script_retail.not_null_stg_retail__orders_order_id.25fe591433: Close
+[0m20:08:34.917283 [info ] [Thread-4 (]: 4 of 6 PASS not_null_stg_retail__orders_order_id ............................... [[32mPASS[0m in 1.14s]
+[0m20:08:34.920234 [debug] [Thread-4 (]: Finished running node test.full_script_retail.not_null_stg_retail__orders_order_id.25fe591433
+[0m20:08:34.921234 [debug] [Thread-4 (]: Began running node test.full_script_retail.unique_int_retail__customer_order_aggregated_customer_id.9f16796f7e
+[0m20:08:34.923233 [info ] [Thread-4 (]: 5 of 6 START test unique_int_retail__customer_order_aggregated_customer_id ..... [RUN]
+[0m20:08:34.925234 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.full_script_retail.not_null_stg_retail__orders_order_id.25fe591433, now test.full_script_retail.unique_int_retail__customer_order_aggregated_customer_id.9f16796f7e)
+[0m20:08:34.926232 [debug] [Thread-4 (]: Began compiling node test.full_script_retail.unique_int_retail__customer_order_aggregated_customer_id.9f16796f7e
+[0m20:08:34.932232 [debug] [Thread-4 (]: Writing injected SQL for node "test.full_script_retail.unique_int_retail__customer_order_aggregated_customer_id.9f16796f7e"
+[0m20:08:34.935240 [debug] [Thread-4 (]: Timing info for test.full_script_retail.unique_int_retail__customer_order_aggregated_customer_id.9f16796f7e (compile): 20:08:34.926232 => 20:08:34.934232
+[0m20:08:34.936234 [debug] [Thread-4 (]: Began executing node test.full_script_retail.unique_int_retail__customer_order_aggregated_customer_id.9f16796f7e
+[0m20:08:34.942279 [debug] [Thread-4 (]: Writing runtime sql for node "test.full_script_retail.unique_int_retail__customer_order_aggregated_customer_id.9f16796f7e"
+[0m20:08:34.945133 [debug] [Thread-4 (]: Using snowflake connection "test.full_script_retail.unique_int_retail__customer_order_aggregated_customer_id.9f16796f7e"
+[0m20:08:34.946132 [debug] [Thread-4 (]: On test.full_script_retail.unique_int_retail__customer_order_aggregated_customer_id.9f16796f7e: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "full_script_retail", "target_name": "dev", "node_id": "test.full_script_retail.unique_int_retail__customer_order_aggregated_customer_id.9f16796f7e"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    customer_id as unique_field,
+    count(*) as n_records
+
+from ANALYTICS.ANALYTICS_CORE.int_retail__customer_order_aggregated
+where customer_id is not null
+group by customer_id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m20:08:34.946132 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m20:08:34.974921 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m20:08:34.977965 [debug] [Thread-1 (]: Timing info for test.full_script_retail.not_null_int_retail__customer_order_aggregated_customer_id.cb91ff550e (execute): 20:08:33.813091 => 20:08:34.976967
+[0m20:08:34.977965 [debug] [Thread-1 (]: On test.full_script_retail.not_null_int_retail__customer_order_aggregated_customer_id.cb91ff550e: Close
+[0m20:08:35.070943 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m20:08:35.073923 [debug] [Thread-2 (]: Timing info for test.full_script_retail.not_null_stg_retail__orders_clerk_id.6fcf0c69e9 (execute): 20:08:33.837736 => 20:08:35.073923
+[0m20:08:35.073923 [debug] [Thread-2 (]: On test.full_script_retail.not_null_stg_retail__orders_clerk_id.6fcf0c69e9: Close
+[0m20:08:35.144868 [info ] [Thread-1 (]: 1 of 6 PASS not_null_int_retail__customer_order_aggregated_customer_id ......... [[32mPASS[0m in 1.38s]
+[0m20:08:35.147869 [debug] [Thread-1 (]: Finished running node test.full_script_retail.not_null_int_retail__customer_order_aggregated_customer_id.cb91ff550e
+[0m20:08:35.149886 [debug] [Thread-1 (]: Began running node test.full_script_retail.unique_stg_retail__orders_order_id.23bf108dff
+[0m20:08:35.150866 [info ] [Thread-1 (]: 6 of 6 START test unique_stg_retail__orders_order_id ........................... [RUN]
+[0m20:08:35.153867 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.full_script_retail.not_null_int_retail__customer_order_aggregated_customer_id.cb91ff550e, now test.full_script_retail.unique_stg_retail__orders_order_id.23bf108dff)
+[0m20:08:35.154869 [debug] [Thread-1 (]: Began compiling node test.full_script_retail.unique_stg_retail__orders_order_id.23bf108dff
+[0m20:08:35.158868 [debug] [Thread-1 (]: Writing injected SQL for node "test.full_script_retail.unique_stg_retail__orders_order_id.23bf108dff"
+[0m20:08:35.159897 [debug] [Thread-1 (]: Timing info for test.full_script_retail.unique_stg_retail__orders_order_id.23bf108dff (compile): 20:08:35.154869 => 20:08:35.159897
+[0m20:08:35.161866 [debug] [Thread-1 (]: Began executing node test.full_script_retail.unique_stg_retail__orders_order_id.23bf108dff
+[0m20:08:35.165865 [debug] [Thread-1 (]: Writing runtime sql for node "test.full_script_retail.unique_stg_retail__orders_order_id.23bf108dff"
+[0m20:08:35.168899 [debug] [Thread-1 (]: Using snowflake connection "test.full_script_retail.unique_stg_retail__orders_order_id.23bf108dff"
+[0m20:08:35.169871 [debug] [Thread-1 (]: On test.full_script_retail.unique_stg_retail__orders_order_id.23bf108dff: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "full_script_retail", "target_name": "dev", "node_id": "test.full_script_retail.unique_stg_retail__orders_order_id.23bf108dff"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    order_id as unique_field,
+    count(*) as n_records
+
+from ANALYTICS.ANALYTICS_CORE.stg_retail__orders
+where order_id is not null
+group by order_id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m20:08:35.170871 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:08:35.222867 [info ] [Thread-2 (]: 2 of 6 PASS not_null_stg_retail__orders_clerk_id ............................... [[32mPASS[0m in 1.46s]
+[0m20:08:35.224871 [debug] [Thread-2 (]: Finished running node test.full_script_retail.not_null_stg_retail__orders_clerk_id.6fcf0c69e9
+[0m20:08:35.322936 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m20:08:35.325950 [debug] [Thread-3 (]: Timing info for test.full_script_retail.not_null_stg_retail__orders_customer_id.858d3627ef (execute): 20:08:33.840140 => 20:08:35.324945
+[0m20:08:35.325950 [debug] [Thread-3 (]: On test.full_script_retail.not_null_stg_retail__orders_customer_id.858d3627ef: Close
+[0m20:08:35.434748 [info ] [Thread-3 (]: 3 of 6 PASS not_null_stg_retail__orders_customer_id ............................ [[32mPASS[0m in 1.67s]
+[0m20:08:35.436750 [debug] [Thread-3 (]: Finished running node test.full_script_retail.not_null_stg_retail__orders_customer_id.858d3627ef
+[0m20:08:35.692304 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m20:08:35.695296 [debug] [Thread-4 (]: Timing info for test.full_script_retail.unique_int_retail__customer_order_aggregated_customer_id.9f16796f7e (execute): 20:08:34.937233 => 20:08:35.695296
+[0m20:08:35.696296 [debug] [Thread-4 (]: On test.full_script_retail.unique_int_retail__customer_order_aggregated_customer_id.9f16796f7e: Close
+[0m20:08:35.814119 [info ] [Thread-4 (]: 5 of 6 PASS unique_int_retail__customer_order_aggregated_customer_id ........... [[32mPASS[0m in 0.89s]
+[0m20:08:35.817053 [debug] [Thread-4 (]: Finished running node test.full_script_retail.unique_int_retail__customer_order_aggregated_customer_id.9f16796f7e
+[0m20:08:36.101039 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m20:08:36.107098 [debug] [Thread-1 (]: Timing info for test.full_script_retail.unique_stg_retail__orders_order_id.23bf108dff (execute): 20:08:35.161866 => 20:08:36.106095
+[0m20:08:36.108095 [debug] [Thread-1 (]: On test.full_script_retail.unique_stg_retail__orders_order_id.23bf108dff: Close
+[0m20:08:36.225098 [info ] [Thread-1 (]: 6 of 6 PASS unique_stg_retail__orders_order_id ................................. [[32mPASS[0m in 1.07s]
+[0m20:08:36.228099 [debug] [Thread-1 (]: Finished running node test.full_script_retail.unique_stg_retail__orders_order_id.23bf108dff
+[0m20:08:36.231136 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m20:08:36.232101 [debug] [MainThread]: Connection 'list_ANALYTICS_ANALYTICS_CORE' was properly closed.
+[0m20:08:36.233099 [debug] [MainThread]: Connection 'test.full_script_retail.unique_stg_retail__orders_order_id.23bf108dff' was properly closed.
+[0m20:08:36.233099 [debug] [MainThread]: Connection 'test.full_script_retail.not_null_stg_retail__orders_clerk_id.6fcf0c69e9' was properly closed.
+[0m20:08:36.234139 [debug] [MainThread]: Connection 'test.full_script_retail.not_null_stg_retail__orders_customer_id.858d3627ef' was properly closed.
+[0m20:08:36.234139 [debug] [MainThread]: Connection 'test.full_script_retail.unique_int_retail__customer_order_aggregated_customer_id.9f16796f7e' was properly closed.
+[0m20:08:36.235145 [info ] [MainThread]: 
+[0m20:08:36.237099 [info ] [MainThread]: Finished running 6 tests in 0 hours 0 minutes and 3.51 seconds (3.51s).
+[0m20:08:36.240099 [debug] [MainThread]: Command end result
+[0m20:08:36.294100 [info ] [MainThread]: 
+[0m20:08:36.296102 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m20:08:36.297104 [info ] [MainThread]: 
+[0m20:08:36.299106 [info ] [MainThread]: Done. PASS=6 WARN=0 ERROR=0 SKIP=0 TOTAL=6
+[0m20:08:36.302101 [debug] [MainThread]: Command `dbt test` succeeded at 20:08:36.302101 after 3.98 seconds
+[0m20:08:36.303107 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A3B2956B50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A3B9E1C910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A3B5FF64D0>]}
+[0m20:08:36.304102 [debug] [MainThread]: Flushing usage events

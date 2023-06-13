@@ -1,0 +1,35 @@
+version: 2
+
+models:
+  - name: stg_retail__customers
+    description: Information related to the customers who placed their order on the retail platform.
+
+    columns:        
+      - name: customer_id
+        description: Primary Key. A unique id assigned to every customer.
+        tests: 
+          - not_null
+          - unique
+        
+      - name: nation_id
+        description: Foreign Key. Refers to every nation where the business is active.
+        tests:
+          - not_null
+
+      - name: name
+        descrition: Identity information of the customer.
+
+      - name: total_price
+        description: Total price of the order.
+
+      - name: created_at
+        description: The date when the order was created.
+
+      - name: priority
+        description: Indicates the priortiy of the order.
+
+      - name: shipping_priority
+        description: Indicates what shipping prority was the order shipped.
+      
+      - name: comments
+        description: Comments mentioned on the order.

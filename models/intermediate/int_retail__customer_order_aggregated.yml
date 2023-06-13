@@ -1,0 +1,27 @@
+version: 2
+
+models:
+  - name: int_retail__customer_order_aggregated
+    description: Customer behaviour and attributes.
+
+    columns:        
+      - name: customer_id
+        description: Primary Key. A unique id assigned to every customer.
+        tests: 
+          - not_null
+          - unique
+        
+      - name: first_order_date
+        description: Date when the first order was created by the customer.
+
+      - name: most_recent_order_date
+        descrition: Date when the first order was created by the customer.
+
+      - name: number_of_orders
+        description: Number of orders placed by a customer.
+
+      - name: lifetime_value
+        description: Lifetime value of the customer.
+
+      - name: average_order_value
+        description: Average order value of the customer's order.
