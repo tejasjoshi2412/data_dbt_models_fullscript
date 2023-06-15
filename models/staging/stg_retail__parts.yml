@@ -1,0 +1,36 @@
+version: 2
+
+models:
+  - name: stg_retail__parts
+    description: Information related to the parts available to be purchased on the retail platform and their prices over time.
+
+    columns: 
+      - name: part_id
+        description: Foreign Key, A unique key assigned to a part.
+        tests: 
+          - not_null
+          - unique
+        
+      - name: part_name
+        description: Name of the part.
+        
+      - name: manufacturer_name
+        description: Name of the manufacturer.
+
+      - name: brand_name
+        description: Name of the brand.
+
+      - name: part_type
+        description: Kind/type of the part.
+
+      - name: part_size
+        description: Size of the part.
+
+      - name: container
+        description: Size of the container.
+
+      - name: retail_price
+        description: Retail Price of the part.
+
+      - name: comments
+        description: Comments mentioned on the order.

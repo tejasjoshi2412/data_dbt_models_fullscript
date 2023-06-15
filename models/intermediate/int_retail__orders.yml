@@ -1,0 +1,51 @@
+version: 2
+
+models:
+  - name: int_retail__orders
+    description: Metrics and information related to Orders on a granular basis.
+
+    columns: 
+      - name: order_id
+        description: Primary Key, A unique key assigned to an orders.
+        tests: 
+          - not_null
+          - unique
+        
+      - name: customer_id
+        description: Primary Key. A unique id assigned to every customer.
+        tests: 
+          - not_null
+
+      - name: quantity
+        descrition: Count of items in the order.
+
+      - name: subtotal_price
+        description: extended_price - discount_price.
+
+      - name: discount_price
+        description: extended_price * percent_discount.
+
+      - name: tax_price
+        description: subtotal_price * percent_tax.
+
+      - name: total_order_price
+        description: subtotal_price + tax_price taken from order level.
+      
+      - name: gross_price
+        description: subtotal_price + tax_price + discount_price.    
+        
+      - name: order_status
+        description: Status of the order.    
+
+      - name: order_priority
+        description: Priority of the Order.
+      
+      - name: shipping_priority
+        description: Shipping priority of the Order.
+
+      - name: created_at
+        description: Order cretaion date.
+
+      - name: customer_purchase_rank
+        description: Number of order by the customer to determine if the customer is a first-time customer.
+

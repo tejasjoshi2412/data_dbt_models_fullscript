@@ -32,6 +32,18 @@ clean-targets:         # directories to be removed by `dbt clean`
 # files using the `{{ config(...) }}` macro.
 models:
   full_script_retail:
-    # Config indicated by + and applies to all files under models/example/
-    example:
+    intermediate:
       +materialized: view
+    
+    marts:
+      core:
+        dim_retail__customers:
+          +materialized: table
+        dim_retail__parts:
+          +materialized: table
+        fct_retail__orders:
+          +materialized: incremental
+
+    staging:
+      +materialized: view
+
