@@ -29,7 +29,12 @@ joined AS (
         lifetime_value,
         average_order_value,
         first_order_date,
-        most_recent_order_date
+        most_recent_order_date,
+        CASE
+            WHEN number_of_orders = 0 THEN 'Customer Signed-up'
+            WHEN number_of_orders = 1 THEN 'First-time Customer'
+            ELSE 'Repeat Customer'
+        END AS customer_type
     FROM
         customers
     LEFT JOIN

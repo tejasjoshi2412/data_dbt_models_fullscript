@@ -3,20 +3,23 @@ WITH orders AS (
         *
     FROM
         {{ ref('stg_retail__orders') }}
+),
+
+customers AS(   
+    SELECT 
+        customer_id,
+        MIN(created_at) AS first_order_date,
+        MAX(created_at) AS most_recent_order_date,
+        COALESCE(COUNT(order_id),0) AS number_of_orders,
+        COALESCE(SUM(total_price),0) AS lifetime_value,
+        COALESCE(ROUND(AVG(total_price),2),0) AS average_order_value
+    FROM
+        orders
+    GROUP BY 
+        1
 )
 
 SELECT 
-    customer_id,
-    MIN(created_at) AS first_order_date,
-    MAX(created_at) AS most_recent_order_date,
-    COUNT(order_id) AS number_of_orders,
-    SUM(total_price) AS lifetime_value,
-    ROUND(AVG(total_price),2) AS average_order_value,
-    CASE
-        WHEN number_of_orders = 1 THEN 'First-time Customer'
-        ELSE 'Repeat Customer'
-    END AS customer_type
+    *
 FROM
-    orders
-GROUP BY 
-    1
+    customers
