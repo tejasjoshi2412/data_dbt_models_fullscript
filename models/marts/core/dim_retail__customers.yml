@@ -45,5 +45,9 @@ models:
 
       - name: average_order_value
         description: Average order value of the customer's order.
+      
+      - name: customer_type
+        description: Number of order by the customer to determine if the customer is a first-time customer or a repeat_customer.
+
 
 
