@@ -1,4 +1,4 @@
-with orders AS (
+WITH orders AS (
     SELECT
         *
     FROM

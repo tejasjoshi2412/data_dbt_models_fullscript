@@ -1,0 +1,66 @@
+version: 2
+
+models:
+  - name: stg_retail__lineitems
+    description: Information related to the customers who placed their order on the retail platform.
+
+    columns:        
+      - name: line_item_id
+        description: Primary Key. A unique id assigned to every line item.
+        tests:
+          - not_null
+          - unique
+
+      - name: order_id
+        description: Foreign Key. A unique id assigned to every order.
+        tests:
+          - not_null
+
+      - name: part_id
+        description: Foreign Key. A unique id assigned to every part.
+        tests:
+          - not_null
+      
+      - name: supplier_id
+        description: Foreign Key. A unique id assigned to every supplier.
+        tests:
+          - not_null
+       
+      - name: order_line_number
+        description: Rank of parts in the order.
+
+      - name: quantity
+        description: Number of items in the order.
+
+      - name: gross_price
+        description: Gross price of the line in an order.
+
+      - name: percent_discount
+        description: Percentage of discount alloted on the order.
+      
+      - name: percent_tax
+        description: Percentage of tax incurred on the amount of order.
+
+      - name: return_flag
+        description: If the order was returned.
+
+      - name: line_status
+        description: Line status of the order.
+
+      - name: shipped_at
+        description: Shipping date of the order.
+      
+      - name: committed_at
+        description: Committed date of the order line.
+
+      - name: delivered_at
+        description: Delivery date of the order.
+
+      - name: shipping_instructions
+        description: Shipping Instructions related to the orders.
+
+      - name: shipping_mode
+        description: Shipping mode for the order.
+      
+      - name: comments
+        description: Comments related to the order line.

@@ -1,4 +1,4 @@
-with sources AS (
+WITH sources AS (
     SELECT
         *
     FROM
@@ -13,7 +13,7 @@ renamed AS (
         o_orderstatus AS order_status,
         o_totalprice AS total_price,
         o_orderdate::DATE AS created_at,
-        o_orderpriority AS priority,
+        o_orderpriority AS order_priority,
         o_shippriority AS shipping_priority,
         o_comment AS comments
     FROM

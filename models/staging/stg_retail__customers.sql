@@ -1,4 +1,4 @@
-with sources AS (
+WITH sources AS (
     SELECT
         *
     FROM
